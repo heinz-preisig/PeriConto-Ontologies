@@ -102,28 +102,7 @@ ICON:ICON {
 
     ICON:Shape rdfs:member ICON:GraphicalObject .
 
-    ICON:CircleDiameter rdf:value ICON:Circle .
-
-    ICON:MajorAxis rdf:value ICON:Ellipse .
-
-    ICON:MinorAxis rdf:value ICON:Ellipse .
-
-    ICON:SemiCircleDiameter rdf:value ICON:SemiCircle .
-
-    ICON:SideLength rdf:value ICON:Triangle .
-
-    ICON:SquareSize rdf:value ICON:Square .
-
     ICON:GraphicalObject rdfs:member ICON:ICON .
-
-    "" xsd:integer ICON:CircleDiameter,
-            ICON:MajorAxis,
-            ICON:MinorAxis,
-            ICON:RectangleHeight,
-            ICON:RectangleWidth,
-            ICON:SemiCircleDiameter,
-            ICON:SideLength,
-            ICON:SquareSize .
 }
 
 DISTRIBUTION:DISTRIBUTION {
@@ -300,9 +279,5 @@ CAPACITY:CAPACITY {
     CAPACITY:Tokens rdfs:member CAPACITY:CAPACITY .
 
     CAPACITY:Characteristics rdfs:member CAPACITY:CAPACITY .
-
-    "" xsd:boolean CAPACITY:D1,
-            CAPACITY:D2,
-            CAPACITY:D3 .
 }
 

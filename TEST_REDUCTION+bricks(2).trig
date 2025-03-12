@@ -17,14 +17,8 @@ FIRST:FIRST {
 
     FIRST:Link rdfs:member FIRST:FIRST .
 
-    FIRST:Int rdf:value FIRST:FIRST .
-
     FIRST:Log rdf:value FIRST:FIRST .
 
-    FIRST:Str rdf:value FIRST:FIRST .
-
-    "" xsd:boolean FIRST:Log ;
-        xsd:integer FIRST:Int ;
-        xsd:string FIRST:Str .
+    "" xsd:boolean FIRST:Log .
 }
 

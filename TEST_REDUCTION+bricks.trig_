@@ -10,12 +10,16 @@ SECOND:SECOND a rdfs:Class .
 
 FIRST:Link rdfs:member FIRST:FIRST .
 
-"" xsd:boolean FIRST:HelloMe ;
-    xsd:integer SECOND:Kkk .
+"" xsd:boolean FIRST:Log ;
+    xsd:integer FIRST:Int,
+        SECOND:Red ;
+    xsd:string FIRST:Str .
 
-FIRST:HelloMe rdf:value FIRST:FIRST .
+FIRST:Int rdf:value FIRST:FIRST .
 
-SECOND:Gugus rdfs:member SECOND:SECOND .
+FIRST:Log rdf:value FIRST:FIRST .
 
-SECOND:Kkk rdf:value SECOND:Gugus .
+FIRST:Str rdf:value FIRST:FIRST .
+
+SECOND:Red rdf:value SECOND:SECOND .
 

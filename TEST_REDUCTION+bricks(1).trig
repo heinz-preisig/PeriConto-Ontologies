@@ -4,27 +4,23 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-SECOND:SECOND {
-    SECOND:SECOND a rdfs:Class .
-
-    "" xsd:integer SECOND:Red .
-
-    SECOND:Red rdf:value SECOND:SECOND .
-}
-
 FIRST:FIRST {
     FIRST:FIRST a rdfs:Class .
 
     FIRST:Link rdfs:member FIRST:FIRST .
 
-    FIRST:Int rdf:value FIRST:FIRST .
+    "" xsd:boolean FIRST:HelloMe .
 
-    FIRST:Log rdf:value FIRST:FIRST .
+    FIRST:HelloMe rdf:value FIRST:FIRST .
+}
 
-    FIRST:Str rdf:value FIRST:FIRST .
+SECOND:SECOND {
+    SECOND:SECOND a rdfs:Class .
 
-    "" xsd:boolean FIRST:Log ;
-        xsd:integer FIRST:Int ;
-        xsd:string FIRST:Str .
+    SECOND:Gugus rdfs:member SECOND:SECOND .
+
+    SECOND:Kkk rdf:value SECOND:Gugus .
+
+    "" xsd:integer SECOND:Kkk .
 }
 
