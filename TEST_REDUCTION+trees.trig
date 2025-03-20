@@ -1,70 +1,93 @@
-@prefix JJ: <http://example.org/JJ#> .
-@prefix JJ-C: <http://example.org/JJ-C#> .
-@prefix JJ-C_i: <http://example.org/JJ-C_i#> .
+@prefix F: <http://example.org/F#> .
+@prefix F-C: <http://example.org/F-C#> .
+@prefix F-C_i: <http://example.org/F-C_i#> .
+@prefix J: <http://example.org/J#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-JJ-C_i:JJ-C_i {
-    JJ-C_i:JJ-C_i a rdfs:Class .
+F:F {
+    F: xsd:boolean F:0_Log ;
+        xsd:integer F:0_Int,
+            F:1_Red ;
+        xsd:string F:0_Str .
 
-    JJ-C_i:123 xsd:integer JJ-C_i:0_Int .
+    F:0_Int rdf:value F:0_FIRST .
 
-    "9" xsd:integer JJ-C_i:1_Red .
+    F:0_Link rdfs:member F:0_FIRST .
 
-    JJ-C_i:0_Int rdf:value JJ-C_i:0_FIRST .
+    F:0_Log rdf:value F:0_FIRST .
 
-    JJ-C_i:0_Link rdfs:member JJ-C_i:0_FIRST .
+    F:0_Str rdf:value F:0_FIRST .
 
-    JJ-C_i:1_Red rdf:value JJ-C_i:1_SECOND .
+    F:1_Red rdf:value F:1_SECOND .
 
-    JJ-C_i:1_SECOND a JJ-C_i:Class ;
-        rdfs:isDefinedBy JJ-C_i:0_Link .
+    F:1_SECOND a F:Class ;
+        rdfs:isDefinedBy F:0_Link .
 
-    JJ-C_i:0_FIRST rdfs:member JJ-C_i:JJ-C_i .
+    F:F a F:Class .
+
+    F:0_FIRST rdfs:member F:F .
 }
 
-JJ-C:JJ-C {
-    JJ-C: xsd:boolean JJ-C:0_Log ;
-        xsd:string JJ-C:0_Str .
+F-C:F-C {
+    F-C: xsd:integer F-C:0_Int ;
+        xsd:string F-C:0_Str .
 
-    JJ-C:123 xsd:integer JJ-C:0_Int .
+    F-C:123 xsd:integer F-C:1_Red .
 
-    JJ-C:0_Int rdf:value JJ-C:0_FIRST .
+    F-C:True xsd:boolean F-C:0_Log .
 
-    JJ-C:0_Link rdfs:member JJ-C:0_FIRST .
+    F-C:0_Int rdf:value F-C:0_FIRST .
 
-    JJ-C:0_Log rdf:value JJ-C:0_FIRST .
+    F-C:0_Link rdfs:member F-C:0_FIRST .
 
-    JJ-C:0_Str rdf:value JJ-C:0_FIRST .
+    F-C:0_Log rdf:value F-C:0_FIRST .
 
-    JJ-C:1_Red rdf:value JJ-C:1_SECOND .
+    F-C:0_Str rdf:value F-C:0_FIRST .
 
-    JJ-C:1_SECOND a JJ-C:Class ;
-        rdfs:isDefinedBy JJ-C:0_Link .
+    F-C:1_Red rdf:value F-C:1_SECOND .
 
-    JJ-C:JJ-C a JJ-C:Class .
+    F-C:1_SECOND rdfs:isDefinedBy F-C:0_Link .
 
-    "9" xsd:integer JJ-C:1_Red .
+    F-C:F-C a F-C:Class .
 
-    JJ-C:0_FIRST rdfs:member JJ-C:JJ-C .
+    F-C:0_FIRST rdfs:member F-C:F-C .
 }
 
-JJ:JJ {
-    JJ: xsd:boolean JJ:0_Log ;
-        xsd:integer JJ:0_Int ;
-        xsd:string JJ:0_Str .
+J:J {
+    J:J a rdfs:Class .
 
-    JJ:0_Link rdfs:member JJ:0_FIRST .
+    J:123 xsd:integer J:1_Red .
 
-    JJ:0_Int rdf:value JJ:0_FIRST .
+    J:True xsd:boolean J:0_Log .
 
-    JJ:0_Log rdf:value JJ:0_FIRST .
+    J:0_Link rdfs:member J:0_FIRST .
 
-    JJ:0_Str rdf:value JJ:0_FIRST .
+    J:0_Log rdf:value J:0_FIRST .
 
-    JJ:JJ a JJ:Class .
+    J:1_Red rdf:value J:1_SECOND .
 
-    JJ:0_FIRST rdfs:member JJ:JJ .
+    J:1_SECOND rdfs:isDefinedBy J:0_Link .
+
+    J:0_FIRST rdfs:member J:J .
+}
+
+F-C_i:F-C_i {
+    F-C_i:123 xsd:integer F-C_i:1_Red .
+
+    F-C_i:True xsd:boolean F-C_i:0_Log .
+
+    F-C_i:0_Link rdfs:member F-C_i:0_FIRST .
+
+    F-C_i:0_Log rdf:value F-C_i:0_FIRST .
+
+    F-C_i:1_Red rdf:value F-C_i:1_SECOND .
+
+    F-C_i:1_SECOND rdfs:isDefinedBy F-C_i:0_Link .
+
+    F-C_i:F-C_i a F-C_i:Class .
+
+    F-C_i:0_FIRST rdfs:member F-C_i:F-C_i .
 }
 

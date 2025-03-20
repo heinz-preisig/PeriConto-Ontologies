@@ -1,0 +1,74 @@
+@prefix F: <http://example.org/F#> .
+@prefix F-C: <http://example.org/F-C#> .
+@prefix F-C_i: <http://example.org/F-C_i#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+F:F {
+    F: xsd:boolean F:0_Log ;
+        xsd:integer F:0_Int,
+            F:1_Red ;
+        xsd:string F:0_Str .
+
+    F:0_Int rdf:value F:0_FIRST .
+
+    F:0_Link rdfs:member F:0_FIRST .
+
+    F:0_Log rdf:value F:0_FIRST .
+
+    F:0_Str rdf:value F:0_FIRST .
+
+    F:1_Red rdf:value F:1_SECOND .
+
+    F:1_SECOND a F:Class ;
+        rdfs:isDefinedBy F:0_Link .
+
+    F:F a F:Class .
+
+    F:0_FIRST rdfs:member F:F .
+}
+
+F-C_i:F-C_i {
+    F-C_i:F-C_i a rdfs:Class .
+
+    "123" xsd:integer F-C_i:1_Red .
+
+    "True" xsd:boolean F-C_i:0_Log .
+
+    F-C_i:0_Link rdfs:member F-C_i:0_FIRST .
+
+    F-C_i:0_Log rdf:value F-C_i:0_FIRST .
+
+    F-C_i:1_Red rdf:value F-C_i:1_SECOND .
+
+    F-C_i:1_SECOND rdfs:isDefinedBy F-C_i:0_Link .
+
+    F-C_i:0_FIRST rdfs:member F-C_i:F-C_i .
+}
+
+F-C:F-C {
+    F-C:F-C a rdfs:Class .
+
+    F-C: xsd:integer F-C:0_Int ;
+        xsd:string F-C:0_Str .
+
+    F-C:0_Int rdf:value F-C:0_FIRST .
+
+    F-C:0_Link rdfs:member F-C:0_FIRST .
+
+    F-C:0_Log rdf:value F-C:0_FIRST .
+
+    F-C:0_Str rdf:value F-C:0_FIRST .
+
+    F-C:1_Red rdf:value F-C:1_SECOND .
+
+    F-C:1_SECOND rdfs:isDefinedBy F-C:0_Link .
+
+    "123" xsd:integer F-C:1_Red .
+
+    "True" xsd:boolean F-C:0_Log .
+
+    F-C:0_FIRST rdfs:member F-C:F-C .
+}
+
