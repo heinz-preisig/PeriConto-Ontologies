@@ -1,0 +1,23 @@
+1	('Int', 'value', 'A', -1), 
+2	('L', 'is_member', 'A', 1), 
+3	('B', 'is_member', 'A', 1), 
+4	('A', 'is_defined_by', 'L', -1), 
+5	('A', 'is_class', 'Class', 1), 
+6	('C', 'is_member', 'B', 1), 
+7	('', 'integer', 'Int', -1), 
+8	('A', 'is_member', 'ABC', 1), 
+9	('ABC', 'is_class', 'Class', 1)]
+
+[ABD] --> Class
+(-,-,ABC) 	-> A 						-- []
+(-,-,A) 	-> A @ L, A @ L, A @ Int	-- [B,Int]
+(-,-,L) 	--> [('A', 
+                  'is_defined_by', 
+                  'L', -1)] 			-- [B,Int] 
+(-,-,B)		-> B @ C    				-- [Int]
+(-,-,C)		-							-- [Int]
+(-,-,int)	-> "" @ Int 				-- []
+
+[A] 
+ 
+

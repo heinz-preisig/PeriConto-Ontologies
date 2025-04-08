@@ -1,0 +1,17 @@
+@prefix ABC: <http://example.org/ABC#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ABC:ABC {
+    ABC:C rdfs:member ABC:B .
+
+    ABC:ABC a ABC:Class .
+
+    ABC:B rdfs:member ABC:A .
+
+    ABC:L rdfs:member ABC:A .
+
+    ABC:A a ABC:Class ;
+        rdfs:isDefinedBy ABC:L ;
+        rdfs:member ABC:ABC .
+}
+
