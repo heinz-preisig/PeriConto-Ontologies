@@ -1,0 +1,24 @@
+@prefix A: <http://example.org/A#> .
+@prefix B: <http://example.org/B#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+A:A {
+    A:A a rdfs:Class .
+
+    A:Ab rdfs:member A:A .
+
+    "" xsd:integer A:Int .
+
+    A:Int rdf:value A:A .
+}
+
+B:B {
+    B:B a rdfs:Class .
+
+    B:L rdf:value B:B .
+
+    "" xsd:string B:L .
+}
+
