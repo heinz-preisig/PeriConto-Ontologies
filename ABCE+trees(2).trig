@@ -10,8 +10,7 @@ ABC:ABC {
     ABC:Ab rdfs:member ABC:A .
 
     ABC:B a ABC:Class ;
-        rdfs:isDefinedBy ABC:Ab,
-            ABC:K,
+        rdfs:isDefinedBy ABC:K,
             ABC:L .
 
     ABC:Int rdf:value ABC:A .

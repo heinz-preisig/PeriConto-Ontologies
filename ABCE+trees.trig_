@@ -9,7 +9,8 @@ ABC: xsd:integer ABC:Int ;
 ABC:Ab rdfs:member ABC:A .
 
 ABC:B a ABC:Class ;
-    rdfs:isDefinedBy ABC:K,
+    rdfs:isDefinedBy ABC:Ab,
+        ABC:K,
         ABC:L .
 
 ABC:Int rdf:value ABC:A .
