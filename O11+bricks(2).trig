@@ -4,18 +4,19 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-A:A a rdfs:Class .
+B:B {
+    B:B a rdfs:Class .
 
-B:B a rdfs:Class .
+    B: xsd:string B:S .
 
-A:B rdfs:member A:Aa,
-        A:Ab .
+    B:S rdf:value B:B .
+}
 
-B: xsd:string B:S .
+A:A {
+    A:A a rdfs:Class .
 
-A:Aa rdfs:member A:A .
+    A:Aa rdfs:member A:A .
 
-A:Ab rdfs:member A:A .
-
-B:S rdf:value B:B .
+    A:Ab rdfs:member A:A .
+}
 
