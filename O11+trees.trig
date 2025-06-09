@@ -7,7 +7,8 @@ A:A {
     A:A a rdfs:Class ;
         rdfs:isDefinedBy A:A .
 
-    <http://example.org/A#instance_0:undefined> xsd:string A:S .
+    <http://example.org/A#instance_0:k> xsd:string A:S .
+    <http://example.org/A#instance_1:p> xsd:string A:S .
 
     A:Aa rdfs:member A:A .
 
