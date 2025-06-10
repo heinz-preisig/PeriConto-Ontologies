@@ -8,14 +8,9 @@ A:A a rdfs:Class .
 
 B:B a rdfs:Class .
 
-A:B rdfs:member A:Aa,
-        A:Ab .
+A:L rdfs:member A:A .
 
-B: xsd:string B:S .
+B: xsd:boolean B:Log .
 
-A:Aa rdfs:member A:A .
-
-A:Ab rdfs:member A:A .
-
-B:S rdf:value B:B .
+B:Log rdf:value B:B .
 
