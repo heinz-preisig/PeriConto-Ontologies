@@ -1,35 +1,18 @@
-@prefix BB: <http://example.org/BB#> .
-@prefix K: <http://example.org/K#> .
+@prefix A: <http://example.org/A#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-BB:BB {
-    BB:BB a rdfs:Class .
+A:A {
+    A:A a rdfs:Class ;
+        rdfs:isDefinedBy A:A .
 
-    BB:instance_0 xsd:boolean BB:Log .
+    <http://example.org/A#instance_0:True> xsd:boolean A:Log .
 
-    BB:B rdfs:isDefinedBy BB:BB .
+    A:B rdfs:isDefinedBy A:L .
 
-    BB:Log rdf:value BB:B .
-}
+    A:L rdfs:member A:A .
 
-K:K {
-    K:K a rdfs:Class .
-
-    K:instance_0 xsd:boolean K:Log .
-
-    K:instance_1 xsd:boolean K:Log .
-
-    K:B rdfs:isDefinedBy K:L,
-            K:Ll .
-
-    K:L rdfs:member K:A .
-
-    K:Ll rdfs:member K:A .
-
-    K:A rdfs:isDefinedBy K:K .
-
-    K:Log rdf:value K:B .
+    A:Log rdf:value A:B .
 }
 
