@@ -1,0 +1,18 @@
+@prefix A: <http://example.org/A#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+A:A {
+    A:A a rdfs:Class ;
+        rdfs:isDefinedBy A:A .
+
+    <http://example.org/A#instance_0:True> xsd:boolean A:Log .
+
+    A:B rdfs:isDefinedBy A:L .
+
+    A:L rdfs:member A:A .
+
+    A:Log rdf:value A:B .
+}
+
