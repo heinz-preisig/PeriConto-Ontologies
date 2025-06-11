@@ -1,0 +1,269 @@
+@prefix BASE: <http://example.org/BASE#> .
+@prefix BASE1: <http://example.org/BASE1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+BASE:BASE a rdfs:Class .
+
+BASE1:BASE1 a rdfs:Class .
+
+BASE:ArcIcon rdfs:member BASE:Arc .
+
+BASE:Circle rdfs:member BASE:SHAPE .
+
+BASE:Dimensions rdfs:member BASE:Colour,
+        BASE:Dot,
+        BASE:Rectangle,
+        BASE:Rhomboid,
+        BASE:Square,
+        BASE:ThickArrow,
+        BASE:Triangle,
+        BASE:UserDefined .
+
+BASE:SemiCircle rdfs:member BASE:SHAPE .
+
+<http://example.org/BASE#instance_0:undefined> xsd:boolean BASE:Discrete .
+
+<http://example.org/BASE#instance_10:undefined> xsd:boolean BASE:Mass .
+
+<http://example.org/BASE#instance_11:undefined> xsd:boolean BASE:LinearMomentum .
+
+<http://example.org/BASE#instance_12:undefined> xsd:boolean BASE:Charge .
+
+<http://example.org/BASE#instance_13:undefined> xsd:boolean BASE:RotationalMomentum .
+
+<http://example.org/BASE#instance_14:undefined> xsd:boolean BASE:D3 .
+
+<http://example.org/BASE#instance_15:undefined> xsd:boolean BASE:Lumped .
+
+<http://example.org/BASE#instance_16:undefined> xsd:boolean BASE:D2 .
+
+<http://example.org/BASE#instance_17:undefined> xsd:boolean BASE:D1 .
+
+<http://example.org/BASE#instance_18:undefined> xsd:boolean BASE:Dynamic .
+
+<http://example.org/BASE#instance_19:undefined> xsd:boolean BASE:Event .
+
+<http://example.org/BASE#instance_1:undefined> xsd:boolean BASE:X .
+
+<http://example.org/BASE#instance_20:undefined> xsd:boolean BASE:Constant .
+
+<http://example.org/BASE#instance_21:undefined> xsd:boolean BASE:Full .
+
+<http://example.org/BASE#instance_22:undefined> xsd:boolean BASE:Dashed .
+
+<http://example.org/BASE#instance_23:undefined> xsd:boolean BASE:DashedFine .
+
+<http://example.org/BASE#instance_24:undefined> xsd:boolean BASE:Arrow .
+
+<http://example.org/BASE#instance_25:undefined> xsd:boolean BASE:DottedFine .
+
+<http://example.org/BASE#instance_26:undefined> xsd:boolean BASE:Dotted .
+
+<http://example.org/BASE#instance_2:undefined> xsd:boolean BASE:Y .
+
+<http://example.org/BASE#instance_3:undefined> xsd:boolean BASE:Continuous .
+
+<http://example.org/BASE#instance_4:undefined> xsd:boolean BASE:Z .
+
+<http://example.org/BASE#instance_5:undefined> xsd:boolean BASE:Direct .
+
+<http://example.org/BASE#instance_6:undefined> xsd:boolean BASE:Convection .
+
+<http://example.org/BASE#instance_7:undefined> xsd:boolean BASE:Radiation .
+
+<http://example.org/BASE#instance_8:undefined> xsd:boolean BASE:Diffusion .
+
+<http://example.org/BASE#instance_9:undefined> xsd:boolean BASE:Energy .
+
+BASE1:ArcIcon rdfs:member BASE1:Arc .
+
+BASE1:Colour rdfs:member BASE1:LINE .
+
+BASE1:Control rdfs:member BASE1:DOMAIN .
+
+BASE1:Frame rdfs:member BASE1:DOMAIN .
+
+BASE1:Information rdfs:member BASE1:DOMAIN .
+
+BASE1:Shape rdfs:member BASE1:GraphicalObject .
+
+BASE1:instance_0 xsd:boolean BASE1:DottedFine .
+
+BASE1:instance_1 xsd:boolean BASE1:Full .
+
+BASE1:instance_2 xsd:boolean BASE1:DashedFine .
+
+BASE1:instance_3 xsd:boolean BASE1:Dotted .
+
+BASE1:instance_4 xsd:boolean BASE1:Arrow .
+
+BASE1:instance_5 xsd:boolean BASE1:Dashed .
+
+BASE:Arrow rdf:value BASE:LINE .
+
+BASE:Capacity rdfs:member BASE:Node .
+
+BASE:Charge rdf:value BASE:TOKENS .
+
+BASE:Colour rdfs:member BASE:LINE,
+        BASE:SHAPE .
+
+BASE:Constant rdf:value BASE:TEMPORAL .
+
+BASE:Continuous rdf:value BASE:Time .
+
+BASE:Control rdfs:member BASE:DOMAIN .
+
+BASE:Convection rdf:value BASE:TRANSPORT .
+
+BASE:D1 rdf:value BASE:DISTRIBUTION .
+
+BASE:D2 rdf:value BASE:DISTRIBUTION .
+
+BASE:D3 rdf:value BASE:DISTRIBUTION .
+
+BASE:Dashed rdf:value BASE:LINE .
+
+BASE:DashedFine rdf:value BASE:LINE .
+
+BASE:Diffusion rdf:value BASE:TRANSPORT .
+
+BASE:Direct rdf:value BASE:TRANSPORT .
+
+BASE:Discrete rdf:value BASE:Time .
+
+BASE:Distribution rdfs:member BASE:Characteristics .
+
+BASE:Dot rdfs:member BASE:SHAPE .
+
+BASE:Dotted rdf:value BASE:LINE .
+
+BASE:DottedFine rdf:value BASE:LINE .
+
+BASE:Dynamic rdf:value BASE:TEMPORAL .
+
+BASE:Energy rdf:value BASE:TOKENS .
+
+BASE:Event rdf:value BASE:TEMPORAL .
+
+BASE:Frame rdfs:member BASE:DOMAIN .
+
+BASE:Full rdf:value BASE:LINE .
+
+BASE:ICON rdfs:isDefinedBy BASE:NodeIcon .
+
+BASE:Information rdfs:member BASE:DOMAIN .
+
+BASE:Line rdfs:member BASE:GraphicalObject .
+
+BASE:LinearMomentum rdf:value BASE:TOKENS .
+
+BASE:Lumped rdf:value BASE:DISTRIBUTION .
+
+BASE:Mass rdf:value BASE:TOKENS .
+
+BASE:NodeIcon rdfs:member BASE:Node .
+
+BASE:Physical rdfs:member BASE:DOMAIN .
+
+BASE:Radiation rdf:value BASE:TRANSPORT .
+
+BASE:Rectangle rdfs:member BASE:SHAPE .
+
+BASE:Rhomboid rdfs:member BASE:SHAPE .
+
+BASE:RotationalMomentum rdf:value BASE:TOKENS .
+
+BASE:Shape rdfs:member BASE:GraphicalObject .
+
+BASE:SpatialCoordinate rdfs:member BASE:FRAME .
+
+BASE:Square rdfs:member BASE:SHAPE .
+
+BASE:Temporal rdfs:member BASE:Characteristics .
+
+BASE:ThickArrow rdfs:member BASE:SHAPE .
+
+BASE:Tokens rdfs:member BASE:CAPACITY,
+        BASE:TRANSPORT .
+
+BASE:Transport rdfs:member BASE:Arc .
+
+BASE:Triangle rdfs:member BASE:SHAPE .
+
+BASE:UserDefined rdfs:member BASE:SHAPE .
+
+BASE:X rdf:value BASE:Cartesian .
+
+BASE:Y rdf:value BASE:Cartesian .
+
+BASE:Z rdf:value BASE:Cartesian .
+
+BASE1:Arc rdfs:member BASE1:GRAPH .
+
+BASE1:Arrow rdf:value BASE1:LINE .
+
+BASE1:Dashed rdf:value BASE1:LINE .
+
+BASE1:DashedFine rdf:value BASE1:LINE .
+
+BASE1:Dotted rdf:value BASE1:LINE .
+
+BASE1:DottedFine rdf:value BASE1:LINE .
+
+BASE1:Full rdf:value BASE1:LINE .
+
+BASE1:ICON rdfs:isDefinedBy BASE1:NodeIcon .
+
+BASE1:Line rdfs:member BASE1:GraphicalObject .
+
+BASE1:Node rdfs:member BASE1:GRAPH .
+
+BASE1:NodeIcon rdfs:member BASE1:Node .
+
+BASE1:Physical rdfs:member BASE1:DOMAIN .
+
+BASE:Arc rdfs:member BASE:GRAPH .
+
+BASE:CAPACITY rdfs:isDefinedBy BASE:Capacity .
+
+BASE:Characteristics rdfs:member BASE:CAPACITY .
+
+BASE:FRAME rdfs:isDefinedBy BASE:Frame .
+
+BASE:GRAPH rdfs:isDefinedBy BASE:Control,
+        BASE:Information,
+        BASE:Physical .
+
+BASE:GraphicalObject rdfs:member BASE:ICON .
+
+BASE:Node rdfs:member BASE:GRAPH .
+
+BASE:Time rdfs:member BASE:FRAME .
+
+BASE1:GRAPH rdfs:isDefinedBy BASE1:Physical .
+
+BASE1:GraphicalObject rdfs:member BASE1:ICON .
+
+BASE:Cartesian rdfs:member BASE:SpatialCoordinate .
+
+BASE:TEMPORAL rdfs:isDefinedBy BASE:Temporal .
+
+BASE:DISTRIBUTION rdfs:isDefinedBy BASE:Distribution .
+
+BASE:DOMAIN rdfs:isDefinedBy BASE:BASE .
+
+BASE1:DOMAIN rdfs:isDefinedBy BASE1:BASE1 .
+
+BASE:TOKENS rdfs:isDefinedBy BASE:Tokens .
+
+BASE:TRANSPORT rdfs:isDefinedBy BASE:Transport .
+
+BASE:LINE rdfs:isDefinedBy BASE:Line .
+
+BASE1:LINE rdfs:isDefinedBy BASE1:Line .
+
+BASE:SHAPE rdfs:isDefinedBy BASE:Shape .
+
