@@ -1,0 +1,41 @@
+{
+  "K": {
+    "instance_0": [
+      "instance_0:undefined",
+      "Bbc",
+      "Bb",
+      "A",
+      "K"
+    ],
+    "instance_1": [
+      "instance_1:undefined",
+      "I",
+      "Bbb",
+      "Bb",
+      "A",
+      "K"
+    ],
+    "instance_2": [
+      "instance_2:undefined",
+      "Sb",
+      "Ab",
+      "A",
+      "K"
+    ],
+    "instance_3": [
+      "instance_3:undefined",
+      "Sa",
+      "Aa",
+      "A",
+      "K"
+    ],
+    "instance_4": [
+      "instance_4:undefined",
+      "Uri",
+      "Aba",
+      "Ab",
+      "A",
+      "K"
+    ]
+  }
+}

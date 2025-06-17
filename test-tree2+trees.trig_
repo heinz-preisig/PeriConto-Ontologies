@@ -1,0 +1,39 @@
+@prefix K: <http://example.org/K#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+K:K a rdfs:Class .
+
+K:instance_0 xsd:decimal K:Bbc .
+
+K:instance_1 xsd:integer K:I .
+
+K:instance_2 xsd:boolean K:Sb .
+
+K:instance_3 xsd:boolean K:Sa .
+
+K:instance_4 xsd:anyURI K:Uri .
+
+K:Aa rdfs:member K:A .
+
+K:Aba rdfs:member K:Ab .
+
+K:Bbb rdfs:member K:Bb .
+
+K:Bbc rdf:value K:Bb .
+
+K:I rdf:value K:Bbb .
+
+K:Sa rdf:value K:Aa .
+
+K:Sb rdf:value K:Ab .
+
+K:Uri rdf:value K:Aba .
+
+K:Ab rdfs:member K:A .
+
+K:Bb rdfs:member K:A .
+
+K:A rdfs:isDefinedBy K:K .
+
