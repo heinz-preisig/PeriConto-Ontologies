@@ -1,0 +1,22 @@
+@prefix G: <http://example.org/G#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+G:G {
+    G:G a rdfs:Class .
+
+    G:Ba rdfs:member G:B .
+
+    G:Bn rdfs:member G:B .
+
+    G:C rdfs:member G:B .
+
+    G:Aa rdfs:member G:A .
+
+    G:Ab rdfs:member G:A .
+
+    G:A rdfs:isDefinedBy G:G .
+
+    G:B rdfs:isDefinedBy G:Aa,
+            G:Ab .
+}
+

@@ -1,0 +1,29 @@
+@prefix G: <http://example.org/G#> .
+@prefix NOTOK: <http://example.org/NOTOK#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+G:G a rdfs:Class .
+
+NOTOK:NOTOK a rdfs:Class .
+
+G:Ba rdfs:member G:B .
+
+G:Bn rdfs:member G:B .
+
+G:C rdfs:member G:B .
+
+NOTOK:Aa rdfs:member NOTOK:A .
+
+NOTOK:Ab rdfs:member NOTOK:A .
+
+G:Aa rdfs:member G:A .
+
+G:Ab rdfs:member G:A .
+
+G:A rdfs:isDefinedBy G:G .
+
+NOTOK:A rdfs:isDefinedBy NOTOK:NOTOK .
+
+G:B rdfs:isDefinedBy G:Aa,
+        G:Ab .
+

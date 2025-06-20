@@ -1,0 +1,21 @@
+@prefix A: <http://example.org/A#> .
+@prefix B: <http://example.org/B#> .
+@prefix C: <http://example.org/C#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+A:A a rdfs:Class .
+
+B:B a rdfs:Class .
+
+C:C a rdfs:Class .
+
+A:Aa rdfs:member A:A .
+
+A:Ab rdfs:member A:A .
+
+B:Ba rdfs:member B:B .
+
+B:Bn rdfs:member B:B .
+
+C:A rdfs:member C:C .
+
