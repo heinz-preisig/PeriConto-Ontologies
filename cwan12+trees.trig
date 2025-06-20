@@ -1,0 +1,148 @@
+@prefix BASE: <http://example.org/BASE#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+BASE:BASE {
+    BASE:BASE a rdfs:Class .
+
+    BASE:ArcIcon rdfs:member BASE:Arc .
+
+    BASE:Control rdfs:member BASE:DOMAIN .
+
+    BASE:Distribution rdfs:member BASE:Characteristics .
+
+    BASE:Frame rdfs:member BASE:DOMAIN .
+
+    BASE:NodeIcon rdfs:member BASE:Node .
+
+    BASE:Temporal rdfs:member BASE:Characteristics .
+
+    BASE:instance_0 xsd:boolean BASE:Convection,
+            BASE:Energy .
+
+    BASE:instance_1 xsd:boolean BASE:Diffusion,
+            BASE:Energy .
+
+    BASE:instance_10 xsd:boolean BASE:LinearMomentum,
+            BASE:Mass .
+
+    BASE:instance_11 xsd:boolean BASE:LinearMomentum,
+            BASE:Mass .
+
+    BASE:instance_12 xsd:boolean BASE:Charge,
+            BASE:Mass .
+
+    BASE:instance_13 xsd:boolean BASE:Charge,
+            BASE:Mass .
+
+    BASE:instance_14 xsd:boolean BASE:Charge,
+            BASE:Mass .
+
+    BASE:instance_15 xsd:boolean BASE:Charge,
+            BASE:Mass .
+
+    BASE:instance_16 xsd:boolean BASE:Mass,
+            BASE:RotationalMomentum .
+
+    BASE:instance_17 xsd:boolean BASE:Mass,
+            BASE:RotationalMomentum .
+
+    BASE:instance_18 xsd:boolean BASE:Charge,
+            BASE:RotationalMomentum .
+
+    BASE:instance_19 xsd:boolean BASE:Charge,
+            BASE:RotationalMomentum .
+
+    BASE:instance_2 xsd:boolean BASE:Direct,
+            BASE:Energy .
+
+    BASE:instance_20 xsd:boolean BASE:Charge .
+
+    BASE:instance_21 xsd:boolean BASE:Charge .
+
+    BASE:instance_22 xsd:boolean BASE:Charge .
+
+    BASE:instance_23 xsd:boolean BASE:Charge .
+
+    BASE:instance_24 xsd:boolean BASE:RotationalMomentum .
+
+    BASE:instance_25 xsd:boolean BASE:RotationalMomentum .
+
+    BASE:instance_26 xsd:boolean BASE:RotationalMomentum .
+
+    BASE:instance_27 xsd:boolean BASE:RotationalMomentum .
+
+    BASE:instance_28 xsd:boolean BASE:RotationalMomentum .
+
+    BASE:instance_29 xsd:boolean BASE:RotationalMomentum .
+
+    BASE:instance_3 xsd:boolean BASE:Energy,
+            BASE:Radiation .
+
+    BASE:instance_4 xsd:boolean BASE:Energy,
+            BASE:LinearMomentum .
+
+    BASE:instance_5 xsd:boolean BASE:Energy,
+            BASE:LinearMomentum .
+
+    BASE:instance_6 xsd:boolean BASE:LinearMomentum .
+
+    BASE:instance_7 xsd:boolean BASE:LinearMomentum .
+
+    BASE:instance_8 xsd:boolean BASE:LinearMomentum,
+            BASE:Mass .
+
+    BASE:instance_9 xsd:boolean BASE:LinearMomentum,
+            BASE:Mass .
+
+    BASE:Capacity rdfs:member BASE:Node .
+
+    BASE:Convection rdf:value BASE:TRANSPORT .
+
+    BASE:Diffusion rdf:value BASE:TRANSPORT .
+
+    BASE:Direct rdf:value BASE:TRANSPORT .
+
+    BASE:Information rdfs:member BASE:DOMAIN .
+
+    BASE:Physical rdfs:member BASE:DOMAIN .
+
+    BASE:Radiation rdf:value BASE:TRANSPORT .
+
+    BASE:Token rdfs:member BASE:GRAPH .
+
+    BASE:Tokens rdfs:member BASE:CAPACITY,
+            BASE:TRANSPORT .
+
+    BASE:Transport rdfs:member BASE:Arc .
+
+    BASE:Arc rdfs:member BASE:GRAPH .
+
+    BASE:CAPACITY rdfs:isDefinedBy BASE:Capacity .
+
+    BASE:Characteristics rdfs:member BASE:CAPACITY .
+
+    BASE:Node rdfs:member BASE:GRAPH .
+
+    BASE:GRAPH rdfs:isDefinedBy BASE:Information,
+            BASE:Physical .
+
+    BASE:DOMAIN rdfs:isDefinedBy BASE:BASE .
+
+    BASE:TOKENS rdfs:isDefinedBy BASE:Token,
+            BASE:Tokens .
+
+    BASE:TRANSPORT rdfs:isDefinedBy BASE:Transport .
+
+    BASE:Energy rdf:value BASE:TOKENS .
+
+    BASE:LinearMomentum rdf:value BASE:TOKENS .
+
+    BASE:Charge rdf:value BASE:TOKENS .
+
+    BASE:Mass rdf:value BASE:TOKENS .
+
+    BASE:RotationalMomentum rdf:value BASE:TOKENS .
+}
+
