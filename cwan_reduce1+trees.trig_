@@ -1,0 +1,62 @@
+@prefix BASE: <http://example.org/BASE#> .
+@prefix BASE_i: <http://example.org/BASE_i#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+BASE:BASE a rdfs:Class .
+
+BASE:Information rdfs:member BASE:DOMAIN .
+
+BASE:instance_0 xsd:boolean BASE:Y .
+
+BASE:instance_1 xsd:boolean BASE:Discrete .
+
+BASE:instance_2 xsd:boolean BASE:Continuous .
+
+BASE:instance_3 xsd:boolean BASE:X .
+
+BASE:instance_4 xsd:boolean BASE:Z .
+
+BASE_i:instance_2 xsd:boolean BASE_i:Continuous .
+
+BASE_i:instance_3 xsd:boolean BASE_i:X .
+
+BASE:Continuous rdf:value BASE:Time .
+
+BASE:Discrete rdf:value BASE:Time .
+
+BASE:Frame rdfs:member BASE:DOMAIN .
+
+BASE:SpatialCoordinate rdfs:member BASE:FRAME .
+
+BASE:X rdf:value BASE:Cartesian .
+
+BASE:Y rdf:value BASE:Cartesian .
+
+BASE:Z rdf:value BASE:Cartesian .
+
+BASE_i:Cartesian xsd:boolean BASE_i:SpatialCoordinate .
+
+BASE_i:Continuous xsd:boolean BASE_i:Time .
+
+BASE_i:DOMAIN xsd:boolean BASE_i:BASE_i .
+
+BASE_i:Frame xsd:boolean BASE_i:DOMAIN .
+
+BASE_i:SpatialCoordinate xsd:boolean BASE_i:FRAME .
+
+BASE_i:Time xsd:boolean BASE_i:FRAME .
+
+BASE_i:X xsd:boolean BASE_i:Cartesian .
+
+BASE:DOMAIN rdfs:isDefinedBy BASE:BASE .
+
+BASE:FRAME rdfs:isDefinedBy BASE:Frame .
+
+BASE:Time rdfs:member BASE:FRAME .
+
+BASE_i:FRAME xsd:boolean BASE_i:Frame .
+
+BASE:Cartesian rdfs:member BASE:SpatialCoordinate .
+
