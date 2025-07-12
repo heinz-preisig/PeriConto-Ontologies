@@ -15,24 +15,98 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+TRANSPORT:TRANSPORT {
+    TRANSPORT:TRANSPORT a rdfs:Class .
+
+    TRANSPORT: xsd:boolean TRANSPORT:Convection,
+            TRANSPORT:Diffusion,
+            TRANSPORT:Direct,
+            TRANSPORT:Radiation .
+
+    TRANSPORT:Convection rdf:value TRANSPORT:TRANSPORT .
+
+    TRANSPORT:Diffusion rdf:value TRANSPORT:TRANSPORT .
+
+    TRANSPORT:Direct rdf:value TRANSPORT:TRANSPORT .
+
+    TRANSPORT:Radiation rdf:value TRANSPORT:TRANSPORT .
+}
+
 DOMAIN:DOMAIN {
     DOMAIN:DOMAIN a rdfs:Class .
 
-    DOMAIN:Arc rdfs:member DOMAIN:Control,
-            DOMAIN:Information,
-            DOMAIN:Physical .
+    DOMAIN:Control rdfs:member DOMAIN:DOMAIN .
 
     DOMAIN:Frame rdfs:member DOMAIN:DOMAIN .
-
-    DOMAIN:Node rdfs:member DOMAIN:Control,
-            DOMAIN:Information,
-            DOMAIN:Physical .
-
-    DOMAIN:Control rdfs:member DOMAIN:DOMAIN .
 
     DOMAIN:Information rdfs:member DOMAIN:DOMAIN .
 
     DOMAIN:Physical rdfs:member DOMAIN:DOMAIN .
+}
+
+TOKENS:TOKENS {
+    TOKENS:TOKENS a rdfs:Class .
+
+    TOKENS: xsd:boolean TOKENS:Charge,
+            TOKENS:Energy,
+            TOKENS:LinearMomentum,
+            TOKENS:Mass,
+            TOKENS:RotationalMomentum .
+
+    TOKENS:Charge rdf:value TOKENS:TOKENS .
+
+    TOKENS:Energy rdf:value TOKENS:TOKENS .
+
+    TOKENS:LinearMomentum rdf:value TOKENS:TOKENS .
+
+    TOKENS:Mass rdf:value TOKENS:TOKENS .
+
+    TOKENS:RotationalMomentum rdf:value TOKENS:TOKENS .
+}
+
+DISTRIBUTION:DISTRIBUTION {
+    DISTRIBUTION:DISTRIBUTION a rdfs:Class .
+
+    DISTRIBUTION: xsd:boolean DISTRIBUTION:D1,
+            DISTRIBUTION:D2,
+            DISTRIBUTION:D3,
+            DISTRIBUTION:Lumped .
+
+    DISTRIBUTION:D1 rdf:value DISTRIBUTION:DISTRIBUTION .
+
+    DISTRIBUTION:D2 rdf:value DISTRIBUTION:DISTRIBUTION .
+
+    DISTRIBUTION:D3 rdf:value DISTRIBUTION:DISTRIBUTION .
+
+    DISTRIBUTION:Lumped rdf:value DISTRIBUTION:DISTRIBUTION .
+}
+
+TEMPORAL:TEMPORAL {
+    TEMPORAL:TEMPORAL a rdfs:Class .
+
+    TEMPORAL: xsd:boolean TEMPORAL:Constant,
+            TEMPORAL:Dynamic,
+            TEMPORAL:Event .
+
+    TEMPORAL:Constant rdf:value TEMPORAL:TEMPORAL .
+
+    TEMPORAL:Dynamic rdf:value TEMPORAL:TEMPORAL .
+
+    TEMPORAL:Event rdf:value TEMPORAL:TEMPORAL .
+}
+
+GRAPH:GRAPH {
+    GRAPH:GRAPH a rdfs:Class .
+
+    GRAPH:ArcIcon rdfs:member GRAPH:Arc .
+
+    GRAPH:NodeIcon rdfs:member GRAPH:Node .
+
+    GRAPH:Token rdfs:member GRAPH:GRAPH .
+
+    GRAPH:Arc rdfs:member GRAPH:GRAPH .
+
+    GRAPH:Node rdfs:member GRAPH:GRAPH .
 }
 
 DIMENSIONS:DIMENSIONS {
@@ -82,132 +156,29 @@ COLOUR:COLOUR {
     COLOUR:Rgb rdfs:member COLOUR:UserColour .
 }
 
-TEMPORAL:TEMPORAL {
-    TEMPORAL:TEMPORAL a rdfs:Class .
+LINE:LINE {
+    LINE:LINE a rdfs:Class .
 
-    TEMPORAL: xsd:boolean TEMPORAL:Constant,
-            TEMPORAL:Dynamic,
-            TEMPORAL:Event .
+    LINE: xsd:boolean LINE:Arrow,
+            LINE:Dashed,
+            LINE:DashedFine,
+            LINE:Dotted,
+            LINE:DottedFine,
+            LINE:Full .
 
-    TEMPORAL:Constant rdf:value TEMPORAL:TEMPORAL .
+    LINE:Colour rdfs:member LINE:LINE .
 
-    TEMPORAL:Dynamic rdf:value TEMPORAL:TEMPORAL .
+    LINE:Arrow rdf:value LINE:LINE .
 
-    TEMPORAL:Event rdf:value TEMPORAL:TEMPORAL .
-}
+    LINE:Dashed rdf:value LINE:LINE .
 
-FRAME:FRAME {
-    FRAME:FRAME a rdfs:Class .
+    LINE:DashedFine rdf:value LINE:LINE .
 
-    FRAME: xsd:boolean FRAME:Continuous,
-            FRAME:Discrete,
-            FRAME:X,
-            FRAME:Y,
-            FRAME:Z .
+    LINE:Dotted rdf:value LINE:LINE .
 
-    FRAME:Continuous rdf:value FRAME:Time .
+    LINE:DottedFine rdf:value LINE:LINE .
 
-    FRAME:Discrete rdf:value FRAME:Time .
-
-    FRAME:SpatialCoordinate rdfs:member FRAME:FRAME .
-
-    FRAME:X rdf:value FRAME:Cartesian .
-
-    FRAME:Y rdf:value FRAME:Cartesian .
-
-    FRAME:Z rdf:value FRAME:Cartesian .
-
-    FRAME:Time rdfs:member FRAME:FRAME .
-
-    FRAME:Cartesian rdfs:member FRAME:SpatialCoordinate .
-}
-
-TRANSPORT:TRANSPORT {
-    TRANSPORT:TRANSPORT a rdfs:Class .
-
-    TRANSPORT: xsd:boolean TRANSPORT:Convection,
-            TRANSPORT:Diffusion,
-            TRANSPORT:Direct,
-            TRANSPORT:Radiation .
-
-    TRANSPORT:Convection rdf:value TRANSPORT:TRANSPORT .
-
-    TRANSPORT:Diffusion rdf:value TRANSPORT:TRANSPORT .
-
-    TRANSPORT:Direct rdf:value TRANSPORT:TRANSPORT .
-
-    TRANSPORT:Radiation rdf:value TRANSPORT:TRANSPORT .
-}
-
-GRAPH:GRAPH {
-    GRAPH:GRAPH a rdfs:Class .
-
-    GRAPH:ArcIcon rdfs:member GRAPH:Arc .
-
-    GRAPH:NodeIcon rdfs:member GRAPH:Node .
-
-    GRAPH:Token rdfs:member GRAPH:GRAPH .
-
-    GRAPH:Arc rdfs:member GRAPH:GRAPH .
-
-    GRAPH:Node rdfs:member GRAPH:GRAPH .
-}
-
-DISTRIBUTION:DISTRIBUTION {
-    DISTRIBUTION:DISTRIBUTION a rdfs:Class .
-
-    DISTRIBUTION: xsd:boolean DISTRIBUTION:D1,
-            DISTRIBUTION:D2,
-            DISTRIBUTION:D3,
-            DISTRIBUTION:Lumped .
-
-    DISTRIBUTION:D1 rdf:value DISTRIBUTION:DISTRIBUTION .
-
-    DISTRIBUTION:D2 rdf:value DISTRIBUTION:DISTRIBUTION .
-
-    DISTRIBUTION:D3 rdf:value DISTRIBUTION:DISTRIBUTION .
-
-    DISTRIBUTION:Lumped rdf:value DISTRIBUTION:DISTRIBUTION .
-}
-
-ICON:ICON {
-    ICON:ICON a rdfs:Class .
-
-    ICON:Line rdfs:member ICON:GraphicalObject .
-
-    ICON:Shape rdfs:member ICON:GraphicalObject .
-
-    ICON:GraphicalObject rdfs:member ICON:ICON .
-}
-
-TOKENS:TOKENS {
-    TOKENS:TOKENS a rdfs:Class .
-
-    TOKENS: xsd:boolean TOKENS:Charge,
-            TOKENS:Energy,
-            TOKENS:LinearMomentum,
-            TOKENS:Mass,
-            TOKENS:RotationalMomentum .
-
-    TOKENS:Charge rdf:value TOKENS:TOKENS .
-
-    TOKENS:Energy rdf:value TOKENS:TOKENS .
-
-    TOKENS:LinearMomentum rdf:value TOKENS:TOKENS .
-
-    TOKENS:Mass rdf:value TOKENS:TOKENS .
-
-    TOKENS:RotationalMomentum rdf:value TOKENS:TOKENS .
-}
-
-CAPACITY:CAPACITY {
-    CAPACITY:CAPACITY a rdfs:Class .
-
-    CAPACITY:Distribution rdfs:member CAPACITY:Characteristics .
-
-    CAPACITY:Temporal rdfs:member CAPACITY:Characteristics .
-
-    CAPACITY:Characteristics rdfs:member CAPACITY:CAPACITY .
+    LINE:Full rdf:value LINE:LINE .
 }
 
 SHAPE:SHAPE {
@@ -245,28 +216,49 @@ SHAPE:SHAPE {
     SHAPE:UserDefined rdfs:member SHAPE:SHAPE .
 }
 
-LINE:LINE {
-    LINE:LINE a rdfs:Class .
+CAPACITY:CAPACITY {
+    CAPACITY:CAPACITY a rdfs:Class .
 
-    LINE: xsd:boolean LINE:Arrow,
-            LINE:Dashed,
-            LINE:DashedFine,
-            LINE:Dotted,
-            LINE:DottedFine,
-            LINE:Full .
+    CAPACITY:Distribution rdfs:member CAPACITY:Characteristics .
 
-    LINE:Colour rdfs:member LINE:LINE .
+    CAPACITY:Temporal rdfs:member CAPACITY:Characteristics .
 
-    LINE:Arrow rdf:value LINE:LINE .
+    CAPACITY:Characteristics rdfs:member CAPACITY:CAPACITY .
+}
 
-    LINE:Dashed rdf:value LINE:LINE .
+ICON:ICON {
+    ICON:ICON a rdfs:Class .
 
-    LINE:DashedFine rdf:value LINE:LINE .
+    ICON:Line rdfs:member ICON:GraphicalObject .
 
-    LINE:Dotted rdf:value LINE:LINE .
+    ICON:Shape rdfs:member ICON:GraphicalObject .
 
-    LINE:DottedFine rdf:value LINE:LINE .
+    ICON:GraphicalObject rdfs:member ICON:ICON .
+}
 
-    LINE:Full rdf:value LINE:LINE .
+FRAME:FRAME {
+    FRAME:FRAME a rdfs:Class .
+
+    FRAME: xsd:boolean FRAME:Continuous,
+            FRAME:Discrete,
+            FRAME:X,
+            FRAME:Y,
+            FRAME:Z .
+
+    FRAME:Continuous rdf:value FRAME:Time .
+
+    FRAME:Discrete rdf:value FRAME:Time .
+
+    FRAME:SpatialCoordinate rdfs:member FRAME:FRAME .
+
+    FRAME:X rdf:value FRAME:Cartesian .
+
+    FRAME:Y rdf:value FRAME:Cartesian .
+
+    FRAME:Z rdf:value FRAME:Cartesian .
+
+    FRAME:Time rdfs:member FRAME:FRAME .
+
+    FRAME:Cartesian rdfs:member FRAME:SpatialCoordinate .
 }
 

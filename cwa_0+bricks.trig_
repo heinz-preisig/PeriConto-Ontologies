@@ -63,15 +63,13 @@ DISTRIBUTION: xsd:boolean DISTRIBUTION:D1,
         DISTRIBUTION:D3,
         DISTRIBUTION:Lumped .
 
-DOMAIN:Arc rdfs:member DOMAIN:Control,
-        DOMAIN:Information,
-        DOMAIN:Physical .
+DOMAIN:Control rdfs:member DOMAIN:DOMAIN .
 
 DOMAIN:Frame rdfs:member DOMAIN:DOMAIN .
 
-DOMAIN:Node rdfs:member DOMAIN:Control,
-        DOMAIN:Information,
-        DOMAIN:Physical .
+DOMAIN:Information rdfs:member DOMAIN:DOMAIN .
+
+DOMAIN:Physical rdfs:member DOMAIN:DOMAIN .
 
 FRAME: xsd:boolean FRAME:Continuous,
         FRAME:Discrete,
@@ -229,12 +227,6 @@ TRANSPORT:Direct rdf:value TRANSPORT:TRANSPORT .
 TRANSPORT:Radiation rdf:value TRANSPORT:TRANSPORT .
 
 CAPACITY:Characteristics rdfs:member CAPACITY:CAPACITY .
-
-DOMAIN:Control rdfs:member DOMAIN:DOMAIN .
-
-DOMAIN:Information rdfs:member DOMAIN:DOMAIN .
-
-DOMAIN:Physical rdfs:member DOMAIN:DOMAIN .
 
 FRAME:Time rdfs:member FRAME:FRAME .
 

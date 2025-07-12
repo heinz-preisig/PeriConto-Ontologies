@@ -13,19 +13,19 @@ B:B {
     B:Log rdf:value B:B .
 }
 
-C:C {
-    C:C a rdfs:Class .
-
-    C:Ca rdfs:member C:C .
-
-    C:Cb rdfs:member C:C .
-}
-
 A:A {
     A:A a rdfs:Class .
 
     A:Aa rdfs:member A:A .
 
     A:Ab rdfs:member A:A .
+}
+
+C:C {
+    C:C a rdfs:Class .
+
+    C:Ca rdfs:member C:C .
+
+    C:Cb rdfs:member C:C .
 }
 
