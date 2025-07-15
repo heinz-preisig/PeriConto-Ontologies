@@ -12,7 +12,7 @@
       ]
     },
     "instance_1": {
-      "value": "undefined",
+      "value": "True",
       "path": [
         "instance_1:undefined",
         "Log",
