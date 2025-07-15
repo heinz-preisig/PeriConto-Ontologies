@@ -1,4 +1,5 @@
 @prefix K: <http://example.org/K#> .
+@prefix KK: <http://example.org/KK#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -20,5 +21,29 @@ K:K {
     K:A rdfs:isDefinedBy K:K .
 
     K:Log rdf:value K:B .
+}
+
+KK:KK {
+    KK:KK a rdfs:Class .
+
+    KK:instance_0 xsd:boolean KK:Log .
+
+    KK:instance_1 xsd:boolean KK:Log .
+
+    KK:instance_2 xsd:boolean KK:Log .
+
+    KK:Aa rdfs:member KK:A .
+
+    KK:B rdfs:isDefinedBy KK:Aa,
+            KK:Ab,
+            KK:Ooo .
+
+    KK:Ooo rdfs:member KK:Ab .
+
+    KK:A rdfs:isDefinedBy KK:KK .
+
+    KK:Ab rdfs:member KK:A .
+
+    KK:Log rdf:value KK:B .
 }
 

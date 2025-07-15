@@ -1,10 +1,70 @@
-@prefix A: <http://example.org/A#> .
+@prefix K: <http://example.org/K#> .
+@prefix KK: <http://example.org/KK#> .
+@prefix KK_i: <http://example.org/KK_i#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-A:A a rdfs:Class ;
-    rdfs:isDefinedBy A:A .
+K:K a rdfs:Class .
 
-A:Aa rdfs:member A:A .
+KK:KK a rdfs:Class .
 
-A:Ab rdfs:member A:A .
+K:instance_0 xsd:boolean K:Log .
+
+K:instance_1 xsd:boolean K:Log .
+
+KK:instance_0 xsd:boolean KK:Log .
+
+KK:instance_1 xsd:boolean KK:Log .
+
+KK:instance_2 xsd:boolean KK:Log .
+
+KK:instance_3 xsd:boolean KK:Log .
+
+KK_i:instance_0 xsd:boolean KK_i:Log .
+
+KK_i:instance_1 xsd:boolean KK_i:Log .
+
+KK_i:instance_2 xsd:boolean KK_i:Log .
+
+KK_i:instance_3 xsd:boolean KK_i:Log .
+
+K:Aa rdfs:member K:A .
+
+K:Ab rdfs:member K:A .
+
+K:B rdfs:isDefinedBy K:Aa,
+        K:Ab .
+
+KK:B rdfs:isDefinedBy KK:Aa,
+        KK:Ab,
+        KK:Kkk,
+        KK:Ooo .
+
+KK:Kkk rdfs:member KK:Aa .
+
+KK:Ooo rdfs:member KK:Ab .
+
+KK_i:A rdfs:isDefinedBy KK_i:KK_i .
+
+KK_i:B rdfs:isDefinedBy KK_i:Aa,
+        KK_i:Kkk .
+
+KK_i:Kkk rdfs:member KK_i:Aa .
+
+K:A rdfs:isDefinedBy K:K .
+
+K:Log rdf:value K:B .
+
+KK:A rdfs:isDefinedBy KK:KK .
+
+KK:Aa rdfs:member KK:A .
+
+KK:Ab rdfs:member KK:A .
+
+KK_i:Aa rdfs:member KK_i:A .
+
+KK:Log rdf:value KK:B .
+
+KK_i:Log rdf:value KK_i:B .
 
