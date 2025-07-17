@@ -112,6 +112,7 @@ TEMPORAL: xsd:boolean TEMPORAL:Constant,
         TEMPORAL:Event .
 
 TOKENS: xsd:boolean TOKENS:Charge,
+        TOKENS:Data,
         TOKENS:Energy,
         TOKENS:LinearMomentum,
         TOKENS:Mass,
@@ -209,6 +210,8 @@ TEMPORAL:Dynamic rdf:value TEMPORAL:TEMPORAL .
 TEMPORAL:Event rdf:value TEMPORAL:TEMPORAL .
 
 TOKENS:Charge rdf:value TOKENS:TOKENS .
+
+TOKENS:Data rdf:value TOKENS:TOKENS .
 
 TOKENS:Energy rdf:value TOKENS:TOKENS .
 
