@@ -1,0 +1,122 @@
+{
+  "K": {
+    "instance_0": {
+      "value": "undefined",
+      "path": [
+        "instance_0:undefined",
+        "Log",
+        "B",
+        "Ab",
+        "A",
+        "K"
+      ]
+    },
+    "instance_1": {
+      "value": "True",
+      "path": [
+        "instance_1:undefined",
+        "Log",
+        "B",
+        "Aa",
+        "A",
+        "K"
+      ]
+    }
+  },
+  "KK": {
+    "instance_0": {
+      "value": "True",
+      "path": [
+        "instance_0:undefined",
+        "Log",
+        "B",
+        "Ab",
+        "A",
+        "KK"
+      ]
+    },
+    "instance_1": {
+      "value": "False",
+      "path": [
+        "instance_1:undefined",
+        "Log",
+        "B",
+        "Aa",
+        "A",
+        "KK"
+      ]
+    },
+    "instance_2": {
+      "value": "True",
+      "path": [
+        "instance_2:undefined",
+        "Log",
+        "B",
+        "Ooo",
+        "Ab",
+        "A",
+        "KK"
+      ]
+    },
+    "instance_3": {
+      "value": "True",
+      "path": [
+        "instance_3:undefined",
+        "Log",
+        "B",
+        "Kkk",
+        "Aa",
+        "A",
+        "KK"
+      ]
+    }
+  },
+  "KK_i": {
+    "instance_0": {
+      "value": "True",
+      "path": [
+        "instance_0:undefined",
+        "Log",
+        "B",
+        "Ab",
+        "A",
+        "KK"
+      ]
+    },
+    "instance_1": {
+      "value": "False",
+      "path": [
+        "instance_1:undefined",
+        "Log",
+        "B",
+        "Aa",
+        "A",
+        "KK"
+      ]
+    },
+    "instance_2": {
+      "value": "True",
+      "path": [
+        "instance_2:undefined",
+        "Log",
+        "B",
+        "Ooo",
+        "Ab",
+        "A",
+        "KK"
+      ]
+    },
+    "instance_3": {
+      "value": "True",
+      "path": [
+        "instance_3:undefined",
+        "Log",
+        "B",
+        "Kkk",
+        "Aa",
+        "A",
+        "KK"
+      ]
+    }
+  }
+}
