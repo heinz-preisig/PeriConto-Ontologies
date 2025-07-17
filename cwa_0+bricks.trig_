@@ -96,8 +96,9 @@ LINE: xsd:boolean LINE:Arrow,
 
 LINE:Colour rdfs:member LINE:LINE .
 
+SHAPE:Colour rdfs:member SHAPE:SHAPE .
+
 SHAPE:Dimensions rdfs:member SHAPE:Circle,
-        SHAPE:Colour,
         SHAPE:Dot,
         SHAPE:Rectangle,
         SHAPE:Rhomboid,
@@ -184,8 +185,6 @@ LINE:DottedFine rdf:value LINE:LINE .
 LINE:Full rdf:value LINE:LINE .
 
 SHAPE:Circle rdfs:member SHAPE:SHAPE .
-
-SHAPE:Colour rdfs:member SHAPE:SHAPE .
 
 SHAPE:Dot rdfs:member SHAPE:SHAPE .
 

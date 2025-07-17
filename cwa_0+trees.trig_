@@ -1,0 +1,829 @@
+@prefix BASE: <http://example.org/BASE#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+BASE:BASE a rdfs:Class .
+
+BASE:instance_0 xsd:boolean BASE:Mass .
+
+BASE:instance_1 xsd:boolean BASE:Mass .
+
+BASE:instance_10 xsd:boolean BASE:LinearMomentum .
+
+BASE:instance_100 xsd:boolean BASE:UserRed .
+
+BASE:instance_101 xsd:boolean BASE:UserRed .
+
+BASE:instance_102 xsd:integer BASE:UserGreen .
+
+BASE:instance_103 xsd:integer BASE:UserGreen .
+
+BASE:instance_104 xsd:integer BASE:UserGreen .
+
+BASE:instance_105 xsd:integer BASE:UserGreen .
+
+BASE:instance_106 xsd:integer BASE:UserGreen .
+
+BASE:instance_107 xsd:integer BASE:UserGreen .
+
+BASE:instance_108 xsd:integer BASE:UserBlue .
+
+BASE:instance_109 xsd:integer BASE:UserBlue .
+
+BASE:instance_11 xsd:boolean BASE:LinearMomentum .
+
+BASE:instance_110 xsd:integer BASE:UserBlue .
+
+BASE:instance_111 xsd:integer BASE:UserBlue .
+
+BASE:instance_112 xsd:integer BASE:UserBlue .
+
+BASE:instance_113 xsd:integer BASE:UserBlue .
+
+BASE:instance_114 xsd:integer BASE:UserRed .
+
+BASE:instance_115 xsd:integer BASE:UserRed .
+
+BASE:instance_116 xsd:integer BASE:UserRed .
+
+BASE:instance_117 xsd:integer BASE:UserRed .
+
+BASE:instance_118 xsd:integer BASE:UserRed .
+
+BASE:instance_119 xsd:integer BASE:UserRed .
+
+BASE:instance_12 xsd:boolean BASE:Energy .
+
+BASE:instance_120 xsd:integer BASE:Radius .
+
+BASE:instance_121 xsd:integer BASE:Radius .
+
+BASE:instance_122 xsd:integer BASE:Radius .
+
+BASE:instance_123 xsd:integer BASE:Radius .
+
+BASE:instance_124 xsd:integer BASE:Radius .
+
+BASE:instance_125 xsd:integer BASE:Radius .
+
+BASE:instance_126 xsd:integer BASE:Radius .
+
+BASE:instance_127 xsd:integer BASE:Radius .
+
+BASE:instance_128 xsd:integer BASE:Radius .
+
+BASE:instance_129 xsd:integer BASE:Radius .
+
+BASE:instance_13 xsd:boolean BASE:Energy .
+
+BASE:instance_130 xsd:integer BASE:Radius .
+
+BASE:instance_131 xsd:integer BASE:Radius .
+
+BASE:instance_132 xsd:integer BASE:Radius .
+
+BASE:instance_133 xsd:integer BASE:Radius .
+
+BASE:instance_134 xsd:integer BASE:Radius .
+
+BASE:instance_135 xsd:integer BASE:Radius .
+
+BASE:instance_136 xsd:integer BASE:Radius .
+
+BASE:instance_137 xsd:integer BASE:Radius .
+
+BASE:instance_138 xsd:integer BASE:Radius .
+
+BASE:instance_139 xsd:integer BASE:Radius .
+
+BASE:instance_14 xsd:boolean BASE:Energy .
+
+BASE:instance_140 xsd:integer BASE:Radius .
+
+BASE:instance_141 xsd:integer BASE:Radius .
+
+BASE:instance_142 xsd:integer BASE:Radius .
+
+BASE:instance_143 xsd:integer BASE:Radius .
+
+BASE:instance_144 xsd:integer BASE:Radius .
+
+BASE:instance_145 xsd:integer BASE:Radius .
+
+BASE:instance_146 xsd:integer BASE:Radius .
+
+BASE:instance_147 xsd:integer BASE:Radius .
+
+BASE:instance_148 xsd:integer BASE:Radius .
+
+BASE:instance_149 xsd:integer BASE:Radius .
+
+BASE:instance_15 xsd:boolean BASE:Data .
+
+BASE:instance_150 xsd:integer BASE:Radius .
+
+BASE:instance_151 xsd:integer BASE:Radius .
+
+BASE:instance_152 xsd:integer BASE:Radius .
+
+BASE:instance_153 xsd:integer BASE:Radius .
+
+BASE:instance_154 xsd:integer BASE:Radius .
+
+BASE:instance_155 xsd:integer BASE:Radius .
+
+BASE:instance_156 xsd:integer BASE:Radius .
+
+BASE:instance_157 xsd:integer BASE:Radius .
+
+BASE:instance_158 xsd:integer BASE:Radius .
+
+BASE:instance_159 xsd:integer BASE:Radius .
+
+BASE:instance_16 xsd:boolean BASE:Data .
+
+BASE:instance_160 xsd:integer BASE:Radius .
+
+BASE:instance_161 xsd:integer BASE:Radius .
+
+BASE:instance_162 xsd:integer BASE:Radius .
+
+BASE:instance_163 xsd:integer BASE:Radius .
+
+BASE:instance_164 xsd:integer BASE:Radius .
+
+BASE:instance_165 xsd:integer BASE:Radius .
+
+BASE:instance_166 xsd:integer BASE:Radius .
+
+BASE:instance_167 xsd:integer BASE:Radius .
+
+BASE:instance_168 xsd:integer BASE:Radius .
+
+BASE:instance_169 xsd:integer BASE:Radius .
+
+BASE:instance_17 xsd:boolean BASE:Data .
+
+BASE:instance_170 xsd:integer BASE:Radius .
+
+BASE:instance_171 xsd:integer BASE:Radius .
+
+BASE:instance_172 xsd:integer BASE:Radius .
+
+BASE:instance_173 xsd:integer BASE:Radius .
+
+BASE:instance_174 xsd:integer BASE:Length .
+
+BASE:instance_175 xsd:integer BASE:Length .
+
+BASE:instance_176 xsd:integer BASE:Length .
+
+BASE:instance_177 xsd:integer BASE:Length .
+
+BASE:instance_178 xsd:integer BASE:Length .
+
+BASE:instance_179 xsd:integer BASE:Length .
+
+BASE:instance_18 xsd:boolean BASE:DashedFine .
+
+BASE:instance_180 xsd:integer BASE:Length .
+
+BASE:instance_181 xsd:integer BASE:Length .
+
+BASE:instance_182 xsd:integer BASE:Length .
+
+BASE:instance_183 xsd:integer BASE:Length .
+
+BASE:instance_184 xsd:integer BASE:Length .
+
+BASE:instance_185 xsd:integer BASE:Length .
+
+BASE:instance_186 xsd:integer BASE:Length .
+
+BASE:instance_187 xsd:integer BASE:Length .
+
+BASE:instance_188 xsd:integer BASE:Length .
+
+BASE:instance_189 xsd:integer BASE:Length .
+
+BASE:instance_19 xsd:boolean BASE:DashedFine .
+
+BASE:instance_190 xsd:integer BASE:Length .
+
+BASE:instance_191 xsd:integer BASE:Length .
+
+BASE:instance_192 xsd:integer BASE:Length .
+
+BASE:instance_193 xsd:integer BASE:Length .
+
+BASE:instance_194 xsd:integer BASE:Length .
+
+BASE:instance_195 xsd:integer BASE:Length .
+
+BASE:instance_196 xsd:integer BASE:Length .
+
+BASE:instance_197 xsd:integer BASE:Length .
+
+BASE:instance_198 xsd:integer BASE:Length .
+
+BASE:instance_199 xsd:integer BASE:Length .
+
+BASE:instance_2 xsd:boolean BASE:Mass .
+
+BASE:instance_20 xsd:boolean BASE:DashedFine .
+
+BASE:instance_200 xsd:integer BASE:Length .
+
+BASE:instance_201 xsd:integer BASE:Length .
+
+BASE:instance_202 xsd:integer BASE:Length .
+
+BASE:instance_203 xsd:integer BASE:Length .
+
+BASE:instance_204 xsd:integer BASE:Length .
+
+BASE:instance_205 xsd:integer BASE:Length .
+
+BASE:instance_206 xsd:integer BASE:Length .
+
+BASE:instance_207 xsd:integer BASE:Length .
+
+BASE:instance_208 xsd:integer BASE:Length .
+
+BASE:instance_209 xsd:integer BASE:Length .
+
+BASE:instance_21 xsd:boolean BASE:DashedFine .
+
+BASE:instance_210 xsd:integer BASE:Length .
+
+BASE:instance_211 xsd:integer BASE:Length .
+
+BASE:instance_212 xsd:integer BASE:Length .
+
+BASE:instance_213 xsd:integer BASE:Length .
+
+BASE:instance_214 xsd:integer BASE:Length .
+
+BASE:instance_215 xsd:integer BASE:Length .
+
+BASE:instance_216 xsd:integer BASE:Length .
+
+BASE:instance_217 xsd:integer BASE:Length .
+
+BASE:instance_218 xsd:integer BASE:Length .
+
+BASE:instance_219 xsd:integer BASE:Length .
+
+BASE:instance_22 xsd:boolean BASE:DashedFine .
+
+BASE:instance_220 xsd:integer BASE:Length .
+
+BASE:instance_221 xsd:integer BASE:Length .
+
+BASE:instance_222 xsd:integer BASE:Length .
+
+BASE:instance_223 xsd:integer BASE:Length .
+
+BASE:instance_224 xsd:integer BASE:Length .
+
+BASE:instance_225 xsd:integer BASE:Length .
+
+BASE:instance_226 xsd:integer BASE:Length .
+
+BASE:instance_227 xsd:integer BASE:Length .
+
+BASE:instance_228 xsd:integer BASE:Width .
+
+BASE:instance_229 xsd:integer BASE:Width .
+
+BASE:instance_23 xsd:boolean BASE:DashedFine .
+
+BASE:instance_230 xsd:integer BASE:Width .
+
+BASE:instance_231 xsd:integer BASE:Width .
+
+BASE:instance_232 xsd:integer BASE:Width .
+
+BASE:instance_233 xsd:integer BASE:Width .
+
+BASE:instance_234 xsd:integer BASE:Width .
+
+BASE:instance_235 xsd:integer BASE:Width .
+
+BASE:instance_236 xsd:integer BASE:Width .
+
+BASE:instance_237 xsd:integer BASE:Width .
+
+BASE:instance_238 xsd:integer BASE:Width .
+
+BASE:instance_239 xsd:integer BASE:Width .
+
+BASE:instance_24 xsd:boolean BASE:Arrow .
+
+BASE:instance_240 xsd:integer BASE:Width .
+
+BASE:instance_241 xsd:integer BASE:Width .
+
+BASE:instance_242 xsd:integer BASE:Width .
+
+BASE:instance_243 xsd:integer BASE:Width .
+
+BASE:instance_244 xsd:integer BASE:Width .
+
+BASE:instance_245 xsd:integer BASE:Width .
+
+BASE:instance_246 xsd:integer BASE:Width .
+
+BASE:instance_247 xsd:integer BASE:Width .
+
+BASE:instance_248 xsd:integer BASE:Width .
+
+BASE:instance_249 xsd:integer BASE:Width .
+
+BASE:instance_25 xsd:boolean BASE:Arrow .
+
+BASE:instance_250 xsd:integer BASE:Width .
+
+BASE:instance_251 xsd:integer BASE:Width .
+
+BASE:instance_252 xsd:integer BASE:Width .
+
+BASE:instance_253 xsd:integer BASE:Width .
+
+BASE:instance_254 xsd:integer BASE:Width .
+
+BASE:instance_255 xsd:integer BASE:Width .
+
+BASE:instance_256 xsd:integer BASE:Width .
+
+BASE:instance_257 xsd:integer BASE:Width .
+
+BASE:instance_258 xsd:integer BASE:Width .
+
+BASE:instance_259 xsd:integer BASE:Width .
+
+BASE:instance_26 xsd:boolean BASE:Arrow .
+
+BASE:instance_260 xsd:integer BASE:Width .
+
+BASE:instance_261 xsd:integer BASE:Width .
+
+BASE:instance_262 xsd:integer BASE:Width .
+
+BASE:instance_263 xsd:integer BASE:Width .
+
+BASE:instance_264 xsd:integer BASE:Width .
+
+BASE:instance_265 xsd:integer BASE:Width .
+
+BASE:instance_266 xsd:integer BASE:Width .
+
+BASE:instance_267 xsd:integer BASE:Width .
+
+BASE:instance_268 xsd:integer BASE:Width .
+
+BASE:instance_269 xsd:integer BASE:Width .
+
+BASE:instance_27 xsd:boolean BASE:Arrow .
+
+BASE:instance_270 xsd:integer BASE:Width .
+
+BASE:instance_271 xsd:integer BASE:Width .
+
+BASE:instance_272 xsd:integer BASE:Width .
+
+BASE:instance_273 xsd:integer BASE:Width .
+
+BASE:instance_274 xsd:integer BASE:Width .
+
+BASE:instance_275 xsd:integer BASE:Width .
+
+BASE:instance_276 xsd:integer BASE:Width .
+
+BASE:instance_277 xsd:integer BASE:Width .
+
+BASE:instance_278 xsd:integer BASE:Width .
+
+BASE:instance_279 xsd:integer BASE:Width .
+
+BASE:instance_28 xsd:boolean BASE:Arrow .
+
+BASE:instance_280 xsd:integer BASE:Width .
+
+BASE:instance_281 xsd:integer BASE:Width .
+
+BASE:instance_282 xsd:boolean BASE:Lumped .
+
+BASE:instance_283 xsd:boolean BASE:Lumped .
+
+BASE:instance_284 xsd:boolean BASE:Lumped .
+
+BASE:instance_285 xsd:boolean BASE:D1 .
+
+BASE:instance_286 xsd:boolean BASE:D1 .
+
+BASE:instance_287 xsd:boolean BASE:D1 .
+
+BASE:instance_288 xsd:boolean BASE:D3 .
+
+BASE:instance_289 xsd:boolean BASE:D3 .
+
+BASE:instance_29 xsd:boolean BASE:Arrow .
+
+BASE:instance_290 xsd:boolean BASE:D3 .
+
+BASE:instance_291 xsd:boolean BASE:D2 .
+
+BASE:instance_292 xsd:boolean BASE:D2 .
+
+BASE:instance_293 xsd:boolean BASE:D2 .
+
+BASE:instance_294 xsd:boolean BASE:Dynamic .
+
+BASE:instance_295 xsd:boolean BASE:Dynamic .
+
+BASE:instance_296 xsd:boolean BASE:Dynamic .
+
+BASE:instance_297 xsd:boolean BASE:Constant .
+
+BASE:instance_298 xsd:boolean BASE:Constant .
+
+BASE:instance_299 xsd:boolean BASE:Constant .
+
+BASE:instance_3 xsd:boolean BASE:RotationalMomentum .
+
+BASE:instance_30 xsd:boolean BASE:Dashed .
+
+BASE:instance_300 xsd:boolean BASE:Event .
+
+BASE:instance_301 xsd:boolean BASE:Event .
+
+BASE:instance_302 xsd:boolean BASE:Event .
+
+BASE:instance_303 xsd:boolean BASE:Radiation .
+
+BASE:instance_304 xsd:boolean BASE:Radiation .
+
+BASE:instance_305 xsd:boolean BASE:Radiation .
+
+BASE:instance_306 xsd:boolean BASE:Diffusion .
+
+BASE:instance_307 xsd:boolean BASE:Diffusion .
+
+BASE:instance_308 xsd:boolean BASE:Diffusion .
+
+BASE:instance_309 xsd:boolean BASE:Convection .
+
+BASE:instance_31 xsd:boolean BASE:Dashed .
+
+BASE:instance_310 xsd:boolean BASE:Convection .
+
+BASE:instance_311 xsd:boolean BASE:Convection .
+
+BASE:instance_312 xsd:boolean BASE:Direct .
+
+BASE:instance_313 xsd:boolean BASE:Direct .
+
+BASE:instance_314 xsd:boolean BASE:Direct .
+
+BASE:instance_315 xsd:boolean BASE:Y .
+
+BASE:instance_316 xsd:boolean BASE:Discrete .
+
+BASE:instance_317 xsd:boolean BASE:X .
+
+BASE:instance_318 xsd:boolean BASE:Z .
+
+BASE:instance_319 xsd:boolean BASE:Continuous .
+
+BASE:instance_32 xsd:boolean BASE:Dashed .
+
+BASE:instance_33 xsd:boolean BASE:Dashed .
+
+BASE:instance_34 xsd:boolean BASE:Dashed .
+
+BASE:instance_35 xsd:boolean BASE:Dashed .
+
+BASE:instance_36 xsd:boolean BASE:DottedFine .
+
+BASE:instance_37 xsd:boolean BASE:DottedFine .
+
+BASE:instance_38 xsd:boolean BASE:DottedFine .
+
+BASE:instance_39 xsd:boolean BASE:DottedFine .
+
+BASE:instance_4 xsd:boolean BASE:RotationalMomentum .
+
+BASE:instance_40 xsd:boolean BASE:DottedFine .
+
+BASE:instance_41 xsd:boolean BASE:DottedFine .
+
+BASE:instance_42 xsd:boolean BASE:Dotted .
+
+BASE:instance_43 xsd:boolean BASE:Dotted .
+
+BASE:instance_44 xsd:boolean BASE:Dotted .
+
+BASE:instance_45 xsd:boolean BASE:Dotted .
+
+BASE:instance_46 xsd:boolean BASE:Dotted .
+
+BASE:instance_47 xsd:boolean BASE:Dotted .
+
+BASE:instance_48 xsd:boolean BASE:Full .
+
+BASE:instance_49 xsd:boolean BASE:Full .
+
+BASE:instance_5 xsd:boolean BASE:RotationalMomentum .
+
+BASE:instance_50 xsd:boolean BASE:Full .
+
+BASE:instance_51 xsd:boolean BASE:Full .
+
+BASE:instance_52 xsd:boolean BASE:Full .
+
+BASE:instance_53 xsd:boolean BASE:Full .
+
+BASE:instance_54 xsd:boolean BASE:Black .
+
+BASE:instance_55 xsd:boolean BASE:Black .
+
+BASE:instance_56 xsd:boolean BASE:Black .
+
+BASE:instance_57 xsd:boolean BASE:Black .
+
+BASE:instance_58 xsd:boolean BASE:Black .
+
+BASE:instance_59 xsd:boolean BASE:Black .
+
+BASE:instance_6 xsd:boolean BASE:Charge .
+
+BASE:instance_60 xsd:boolean BASE:Green .
+
+BASE:instance_61 xsd:boolean BASE:Green .
+
+BASE:instance_62 xsd:boolean BASE:Green .
+
+BASE:instance_63 xsd:boolean BASE:Green .
+
+BASE:instance_64 xsd:boolean BASE:Green .
+
+BASE:instance_65 xsd:boolean BASE:Green .
+
+BASE:instance_66 xsd:boolean BASE:Red .
+
+BASE:instance_67 xsd:boolean BASE:Red .
+
+BASE:instance_68 xsd:boolean BASE:Red .
+
+BASE:instance_69 xsd:boolean BASE:Red .
+
+BASE:instance_7 xsd:boolean BASE:Charge .
+
+BASE:instance_70 xsd:boolean BASE:Red .
+
+BASE:instance_71 xsd:boolean BASE:Red .
+
+BASE:instance_72 xsd:boolean BASE:Blue .
+
+BASE:instance_73 xsd:boolean BASE:Blue .
+
+BASE:instance_74 xsd:boolean BASE:Blue .
+
+BASE:instance_75 xsd:boolean BASE:Blue .
+
+BASE:instance_76 xsd:boolean BASE:Blue .
+
+BASE:instance_77 xsd:boolean BASE:Blue .
+
+BASE:instance_78 xsd:boolean BASE:Yellow .
+
+BASE:instance_79 xsd:boolean BASE:Yellow .
+
+BASE:instance_8 xsd:boolean BASE:Charge .
+
+BASE:instance_80 xsd:boolean BASE:Yellow .
+
+BASE:instance_81 xsd:boolean BASE:Yellow .
+
+BASE:instance_82 xsd:boolean BASE:Yellow .
+
+BASE:instance_83 xsd:boolean BASE:Yellow .
+
+BASE:instance_84 xsd:boolean BASE:UserGreen .
+
+BASE:instance_85 xsd:boolean BASE:UserGreen .
+
+BASE:instance_86 xsd:boolean BASE:UserGreen .
+
+BASE:instance_87 xsd:boolean BASE:UserGreen .
+
+BASE:instance_88 xsd:boolean BASE:UserGreen .
+
+BASE:instance_89 xsd:boolean BASE:UserGreen .
+
+BASE:instance_9 xsd:boolean BASE:LinearMomentum .
+
+BASE:instance_90 xsd:boolean BASE:UserBlue .
+
+BASE:instance_91 xsd:boolean BASE:UserBlue .
+
+BASE:instance_92 xsd:boolean BASE:UserBlue .
+
+BASE:instance_93 xsd:boolean BASE:UserBlue .
+
+BASE:instance_94 xsd:boolean BASE:UserBlue .
+
+BASE:instance_95 xsd:boolean BASE:UserBlue .
+
+BASE:instance_96 xsd:boolean BASE:UserRed .
+
+BASE:instance_97 xsd:boolean BASE:UserRed .
+
+BASE:instance_98 xsd:boolean BASE:UserRed .
+
+BASE:instance_99 xsd:boolean BASE:UserRed .
+
+BASE:ArcIcon rdfs:member BASE:Arc .
+
+BASE:CAPACITY rdfs:isDefinedBy BASE:Capacity .
+
+BASE:Capacity rdfs:member BASE:Node .
+
+BASE:Circle rdfs:member BASE:SHAPE .
+
+BASE:Colour rdfs:member BASE:LINE,
+        BASE:SHAPE .
+
+BASE:Continuous rdf:value BASE:Time .
+
+BASE:Control rdfs:member BASE:DOMAIN .
+
+BASE:Dimensions rdfs:member BASE:Circle,
+        BASE:Dot,
+        BASE:Rectangle,
+        BASE:Rhomboid,
+        BASE:SemiCircle,
+        BASE:Square,
+        BASE:ThickArrow,
+        BASE:Triangle,
+        BASE:UserDefined .
+
+BASE:Discrete rdf:value BASE:Time .
+
+BASE:Distribution rdfs:member BASE:Characteristics .
+
+BASE:Dot rdfs:member BASE:SHAPE .
+
+BASE:Frame rdfs:member BASE:DOMAIN .
+
+BASE:ICON rdfs:isDefinedBy BASE:ArcIcon,
+        BASE:NodeIcon .
+
+BASE:Information rdfs:member BASE:DOMAIN .
+
+BASE:Line rdfs:member BASE:GraphicalObject .
+
+BASE:NodeIcon rdfs:member BASE:Node .
+
+BASE:Physical rdfs:member BASE:DOMAIN .
+
+BASE:Rectangle rdfs:member BASE:SHAPE .
+
+BASE:Rhomboid rdfs:member BASE:SHAPE .
+
+BASE:SemiCircle rdfs:member BASE:SHAPE .
+
+BASE:Shape rdfs:member BASE:GraphicalObject .
+
+BASE:SpatialCoordinate rdfs:member BASE:FRAME .
+
+BASE:Square rdfs:member BASE:SHAPE .
+
+BASE:Temporal rdfs:member BASE:Characteristics .
+
+BASE:ThickArrow rdfs:member BASE:SHAPE .
+
+BASE:Token rdfs:member BASE:GRAPH .
+
+BASE:Transport rdfs:member BASE:Arc .
+
+BASE:Triangle rdfs:member BASE:SHAPE .
+
+BASE:UserColour rdfs:member BASE:COLOUR .
+
+BASE:UserDefined rdfs:member BASE:SHAPE .
+
+BASE:X rdf:value BASE:Cartesian .
+
+BASE:Y rdf:value BASE:Cartesian .
+
+BASE:Z rdf:value BASE:Cartesian .
+
+BASE:Arc rdfs:member BASE:GRAPH .
+
+BASE:Characteristics rdfs:member BASE:CAPACITY .
+
+BASE:FRAME rdfs:isDefinedBy BASE:Frame .
+
+BASE:GraphicalObject rdfs:member BASE:ICON .
+
+BASE:Node rdfs:member BASE:GRAPH .
+
+BASE:Time rdfs:member BASE:FRAME .
+
+BASE:Cartesian rdfs:member BASE:SpatialCoordinate .
+
+BASE:Charge rdf:value BASE:TOKENS .
+
+BASE:Constant rdf:value BASE:TEMPORAL .
+
+BASE:Convection rdf:value BASE:TRANSPORT .
+
+BASE:D1 rdf:value BASE:DISTRIBUTION .
+
+BASE:D2 rdf:value BASE:DISTRIBUTION .
+
+BASE:D3 rdf:value BASE:DISTRIBUTION .
+
+BASE:DIMENSIONS rdfs:isDefinedBy BASE:Dimensions .
+
+BASE:Data rdf:value BASE:TOKENS .
+
+BASE:Diffusion rdf:value BASE:TRANSPORT .
+
+BASE:Direct rdf:value BASE:TRANSPORT .
+
+BASE:Dynamic rdf:value BASE:TEMPORAL .
+
+BASE:Energy rdf:value BASE:TOKENS .
+
+BASE:Event rdf:value BASE:TEMPORAL .
+
+BASE:GRAPH rdfs:isDefinedBy BASE:Control,
+        BASE:Information,
+        BASE:Physical .
+
+BASE:LinearMomentum rdf:value BASE:TOKENS .
+
+BASE:Lumped rdf:value BASE:DISTRIBUTION .
+
+BASE:Mass rdf:value BASE:TOKENS .
+
+BASE:Radiation rdf:value BASE:TRANSPORT .
+
+BASE:Rgb rdfs:member BASE:UserColour .
+
+BASE:RotationalMomentum rdf:value BASE:TOKENS .
+
+BASE:TEMPORAL rdfs:isDefinedBy BASE:Temporal .
+
+BASE:DISTRIBUTION rdfs:isDefinedBy BASE:Distribution .
+
+BASE:DOMAIN rdfs:isDefinedBy BASE:BASE .
+
+BASE:TRANSPORT rdfs:isDefinedBy BASE:Transport .
+
+BASE:Arrow rdf:value BASE:LINE .
+
+BASE:Black rdf:value BASE:COLOUR .
+
+BASE:Blue rdf:value BASE:COLOUR .
+
+BASE:COLOUR rdfs:isDefinedBy BASE:Colour .
+
+BASE:Dashed rdf:value BASE:LINE .
+
+BASE:DashedFine rdf:value BASE:LINE .
+
+BASE:Dotted rdf:value BASE:LINE .
+
+BASE:DottedFine rdf:value BASE:LINE .
+
+BASE:Full rdf:value BASE:LINE .
+
+BASE:Green rdf:value BASE:COLOUR .
+
+BASE:Red rdf:value BASE:COLOUR .
+
+BASE:TOKENS rdfs:isDefinedBy BASE:Token .
+
+BASE:Yellow rdf:value BASE:COLOUR .
+
+BASE:LINE rdfs:isDefinedBy BASE:Line .
+
+BASE:SHAPE rdfs:isDefinedBy BASE:Shape .
+
+BASE:UserBlue rdf:value BASE:Rgb .
+
+BASE:UserGreen rdf:value BASE:Rgb .
+
+BASE:UserRed rdf:value BASE:Rgb .
+
+BASE:Length rdf:value BASE:DIMENSIONS .
+
+BASE:Radius rdf:value BASE:DIMENSIONS .
+
+BASE:Width rdf:value BASE:DIMENSIONS .
+
