@@ -2,7 +2,7 @@
 # Script to run the PyQt5 application with proper X11 forwarding
 
 # Set image name and paths
-IMAGE_NAME="periconto"
+IMAGE_NAME="hapdocker/periconto"
 LOCAL_ONTOLOGY_REPOSITORY=$(pwd) #"/home/heinz/1_Gits/OntoBuild/PeriConto-Ontologies"
 DOKER_ONTOLOGY_REPOSITORY="/PeriConto-Ontologies"
 
