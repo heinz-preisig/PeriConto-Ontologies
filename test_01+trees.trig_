@@ -5,20 +5,23 @@
 
 K:K a rdfs:Class .
 
-K:Ll rdfs:member K:A .
-
 K:instance_0 xsd:boolean K:Log .
 
 K:instance_1 xsd:boolean K:Log .
 
+K:instance_2 xsd:boolean K:Log .
+
 K:Aa rdfs:member K:A .
+
+K:B rdfs:isDefinedBy K:Aa,
+        K:Ab,
+        K:Kkk .
+
+K:Kkk rdfs:member K:Ab .
+
+K:A rdfs:isDefinedBy K:K .
 
 K:Ab rdfs:member K:A .
 
-K:B rdfs:isDefinedBy K:Aa,
-        K:Ab .
-
 K:Log rdf:value K:B .
-
-K:A rdfs:isDefinedBy K:K .
 

@@ -1,9 +1,9 @@
 {
   "K": {
     "instance_0": {
-      "value": "undefined",
+      "value": "True",
       "path": [
-        "instance_0:undefined",
+        "instance_0",
         "Log",
         "B",
         "Ab",
@@ -12,12 +12,24 @@
       ]
     },
     "instance_1": {
-      "value": "True",
+      "value": "undefined",
       "path": [
-        "instance_1:undefined",
+        "instance_1",
         "Log",
         "B",
         "Aa",
+        "A",
+        "K"
+      ]
+    },
+    "instance_2": {
+      "value": "undefined",
+      "path": [
+        "instance_2",
+        "Log",
+        "B",
+        "Kkk",
+        "Ab",
         "A",
         "K"
       ]

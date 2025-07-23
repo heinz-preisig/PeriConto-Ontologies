@@ -5,20 +5,20 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-A:A {
-    A:A a rdfs:Class .
-
-    A:Aa rdfs:member A:A .
-
-    A:Ab rdfs:member A:A .
-}
-
 B:B {
     B:B a rdfs:Class .
 
     B: xsd:boolean B:Log .
 
     B:Log rdf:value B:B .
+}
+
+A:A {
+    A:A a rdfs:Class .
+
+    A:Aa rdfs:member A:A .
+
+    A:Ab rdfs:member A:A .
 }
 
 C:C {
