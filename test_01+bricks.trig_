@@ -2,6 +2,7 @@
 @prefix B: <http://example.org/B#> .
 @prefix C: <http://example.org/C#> .
 @prefix D: <http://example.org/D#> .
+@prefix E: <http://example.org/E#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -13,6 +14,8 @@ B:B a rdfs:Class .
 C:C a rdfs:Class .
 
 D:D a rdfs:Class .
+
+E:E a rdfs:Class .
 
 A:Aa rdfs:member A:A .
 
@@ -32,6 +35,8 @@ C:integer xsd:integer C:I .
 D:Daaa rdfs:member D:Daa .
 
 D:Dbbb rdfs:member D:Dbb .
+
+E: rdfs:comment E:Com .
 
 B:Log rdf:value B:B .
 
@@ -62,4 +67,6 @@ D:Daa rdfs:member D:Da .
 D:Db rdfs:member D:D .
 
 D:Dbb rdfs:member D:Db .
+
+E:Com rdf:value E:E .
 

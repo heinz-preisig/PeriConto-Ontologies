@@ -16,7 +16,7 @@ K:instance_2 xsd:boolean K:Log .
 
 O:Aa rdfs:member O:A .
 
-O:Ab rdfs:member O:A .
+O:instance_0 rdfs:comment O:Com .
 
 K:Aa rdfs:member K:A .
 
@@ -25,6 +25,12 @@ K:B rdfs:isDefinedBy K:Aa,
         K:Kkk .
 
 K:Kkk rdfs:member K:Ab .
+
+O:Ab rdfs:member O:A .
+
+O:Com rdf:value O:E .
+
+O:E rdfs:isDefinedBy O:Ab .
 
 K:A rdfs:isDefinedBy K:K .
 

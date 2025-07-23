@@ -2,33 +2,10 @@
 @prefix B: <http://example.org/B#> .
 @prefix C: <http://example.org/C#> .
 @prefix D: <http://example.org/D#> .
+@prefix E: <http://example.org/E#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-D:D {
-    D:D a rdfs:Class .
-
-    D:Daaa rdfs:member D:Daa .
-
-    D:Dbbb rdfs:member D:Dbb .
-
-    D:Da rdfs:member D:D .
-
-    D:Daa rdfs:member D:Da .
-
-    D:Db rdfs:member D:D .
-
-    D:Dbb rdfs:member D:Db .
-}
-
-A:A {
-    A:A a rdfs:Class .
-
-    A:Aa rdfs:member A:A .
-
-    A:Ab rdfs:member A:A .
-}
 
 B:B {
     B:B a rdfs:Class .
@@ -36,6 +13,14 @@ B:B {
     B: xsd:boolean B:Log .
 
     B:Log rdf:value B:B .
+}
+
+E:E {
+    E:E a rdfs:Class .
+
+    E: rdfs:comment E:Com .
+
+    E:Com rdf:value E:E .
 }
 
 C:C {
@@ -69,5 +54,29 @@ C:C {
     C:String rdf:value C:Cd .
 
     C:Uri rdf:value C:C .
+}
+
+D:D {
+    D:D a rdfs:Class .
+
+    D:Daaa rdfs:member D:Daa .
+
+    D:Dbbb rdfs:member D:Dbb .
+
+    D:Da rdfs:member D:D .
+
+    D:Daa rdfs:member D:Da .
+
+    D:Db rdfs:member D:D .
+
+    D:Dbb rdfs:member D:Db .
+}
+
+A:A {
+    A:A a rdfs:Class .
+
+    A:Aa rdfs:member A:A .
+
+    A:Ab rdfs:member A:A .
 }
 

@@ -9,7 +9,13 @@ O:O {
 
     O:Aa rdfs:member O:A .
 
+    O:instance_0 rdfs:comment O:Com .
+
     O:Ab rdfs:member O:A .
+
+    O:Com rdf:value O:E .
+
+    O:E rdfs:isDefinedBy O:Ab .
 
     O:A rdfs:isDefinedBy O:O .
 }
