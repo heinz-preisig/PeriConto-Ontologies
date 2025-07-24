@@ -1,23 +1,43 @@
 @prefix K: <http://example.org/K#> .
-@prefix O: <http://example.org/O#> .
+@prefix PRIMITIVES: <http://example.org/PRIMITIVES#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-O:O {
-    O:O a rdfs:Class .
+PRIMITIVES:PRIMITIVES {
+    PRIMITIVES:PRIMITIVES a rdfs:Class .
 
-    O:Aa rdfs:member O:A .
+    PRIMITIVES:instance_0 xsd:integer PRIMITIVES:Ca .
 
-    O:instance_0 rdfs:comment O:Com .
+    PRIMITIVES:instance_1 xsd:decimal PRIMITIVES:Cc .
 
-    O:Ab rdfs:member O:A .
+    PRIMITIVES:instance_2 rdfs:comment PRIMITIVES:Cb .
 
-    O:Com rdf:value O:E .
+    PRIMITIVES:instance_3 xsd:anyURI PRIMITIVES:Ce .
 
-    O:E rdfs:isDefinedBy O:Ab .
+    PRIMITIVES:instance_4 xsd:anyURI PRIMITIVES:Cg .
 
-    O:A rdfs:isDefinedBy O:O .
+    PRIMITIVES:instance_5 xsd:string PRIMITIVES:Cd .
+
+    PRIMITIVES:instance_6 xsd:boolean PRIMITIVES:Cf .
+
+    PRIMITIVES:Ca rdf:value PRIMITIVES:C .
+
+    PRIMITIVES:Cb rdf:value PRIMITIVES:C .
+
+    PRIMITIVES:Cc rdf:value PRIMITIVES:C .
+
+    PRIMITIVES:Cd rdf:value PRIMITIVES:C .
+
+    PRIMITIVES:Ce rdf:value PRIMITIVES:C .
+
+    PRIMITIVES:Cf rdf:value PRIMITIVES:C .
+
+    PRIMITIVES:Cg rdf:value PRIMITIVES:K .
+
+    PRIMITIVES:K rdfs:member PRIMITIVES:C .
+
+    PRIMITIVES:C rdfs:isDefinedBy PRIMITIVES:PRIMITIVES .
 }
 
 K:K {

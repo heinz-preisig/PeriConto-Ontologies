@@ -7,55 +7,6 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-B:B {
-    B:B a rdfs:Class .
-
-    B: xsd:boolean B:Log .
-
-    B:Log rdf:value B:B .
-}
-
-E:E {
-    E:E a rdfs:Class .
-
-    E: rdfs:comment E:Com .
-
-    E:Com rdf:value E:E .
-}
-
-C:C {
-    C:C a rdfs:Class .
-
-    C: xsd:anyURI C:Uri ;
-        xsd:boolean C:Ce ;
-        xsd:decimal C:D ;
-        xsd:string C:String .
-
-    C:comment rdfs:comment C:Com .
-
-    C:integer xsd:integer C:I .
-
-    C:Ca rdfs:member C:C .
-
-    C:Cb rdfs:member C:C .
-
-    C:Cc rdfs:member C:C .
-
-    C:Cd rdfs:member C:C .
-
-    C:Ce rdf:value C:C .
-
-    C:Com rdf:value C:Cb .
-
-    C:D rdf:value C:Cc .
-
-    C:I rdf:value C:Ca .
-
-    C:String rdf:value C:Cd .
-
-    C:Uri rdf:value C:C .
-}
-
 D:D {
     D:D a rdfs:Class .
 
@@ -70,6 +21,50 @@ D:D {
     D:Db rdfs:member D:D .
 
     D:Dbb rdfs:member D:Db .
+}
+
+C:C {
+    C:C a rdfs:Class .
+
+    C: rdfs:comment C:Cb ;
+        xsd:anyURI C:Ce,
+            C:Cg ;
+        xsd:boolean C:Cf ;
+        xsd:decimal C:Cc ;
+        xsd:integer C:Ca ;
+        xsd:string C:Cd .
+
+    C:Ca rdf:value C:C .
+
+    C:Cb rdf:value C:C .
+
+    C:Cc rdf:value C:C .
+
+    C:Cd rdf:value C:C .
+
+    C:Ce rdf:value C:C .
+
+    C:Cf rdf:value C:C .
+
+    C:Cg rdf:value C:K .
+
+    C:K rdfs:member C:C .
+}
+
+B:B {
+    B:B a rdfs:Class .
+
+    B: xsd:boolean B:Log .
+
+    B:Log rdf:value B:B .
+}
+
+E:E {
+    E:E a rdfs:Class .
+
+    E: rdfs:comment E:Com .
+
+    E:Com rdf:value E:E .
 }
 
 A:A {

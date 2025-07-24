@@ -23,14 +23,13 @@ A:Ab rdfs:member A:A .
 
 B: xsd:boolean B:Log .
 
-C: xsd:anyURI C:Uri ;
-    xsd:boolean C:Ce ;
-    xsd:decimal C:D ;
-    xsd:string C:String .
-
-C:comment rdfs:comment C:Com .
-
-C:integer xsd:integer C:I .
+C: rdfs:comment C:Cb ;
+    xsd:anyURI C:Ce,
+        C:Cg ;
+    xsd:boolean C:Cf ;
+    xsd:decimal C:Cc ;
+    xsd:integer C:Ca ;
+    xsd:string C:Cd .
 
 D:Daaa rdfs:member D:Daa .
 
@@ -40,25 +39,21 @@ E: rdfs:comment E:Com .
 
 B:Log rdf:value B:B .
 
-C:Ca rdfs:member C:C .
+C:Ca rdf:value C:C .
 
-C:Cb rdfs:member C:C .
+C:Cb rdf:value C:C .
 
-C:Cc rdfs:member C:C .
+C:Cc rdf:value C:C .
 
-C:Cd rdfs:member C:C .
+C:Cd rdf:value C:C .
 
 C:Ce rdf:value C:C .
 
-C:Com rdf:value C:Cb .
+C:Cf rdf:value C:C .
 
-C:D rdf:value C:Cc .
+C:Cg rdf:value C:K .
 
-C:I rdf:value C:Ca .
-
-C:String rdf:value C:Cd .
-
-C:Uri rdf:value C:C .
+C:K rdfs:member C:C .
 
 D:Da rdfs:member D:D .
 

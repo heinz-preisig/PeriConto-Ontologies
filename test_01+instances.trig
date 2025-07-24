@@ -35,16 +35,69 @@
       ]
     }
   },
-  "O": {
+  "PRIMITIVES": {
     "instance_0": {
       "value": "undefined",
       "path": [
         "instance_0",
-        "Com",
-        "E",
-        "Ab",
-        "A",
-        "O"
+        "Ca",
+        "C",
+        "PRIMITIVES"
+      ]
+    },
+    "instance_1": {
+      "value": "undefined",
+      "path": [
+        "instance_1",
+        "Cc",
+        "C",
+        "PRIMITIVES"
+      ]
+    },
+    "instance_2": {
+      "value": "undefined",
+      "path": [
+        "instance_2",
+        "Cb",
+        "C",
+        "PRIMITIVES"
+      ]
+    },
+    "instance_3": {
+      "value": "undefined",
+      "path": [
+        "instance_3",
+        "Ce",
+        "C",
+        "PRIMITIVES"
+      ]
+    },
+    "instance_4": {
+      "value": "undefined",
+      "path": [
+        "instance_4",
+        "Cg",
+        "K",
+        "C",
+        "PRIMITIVES"
+      ]
+    },
+    "instance_5": {
+      "value": "undefined",
+      "path": [
+        "instance_5",
+        "Cd",
+        "C",
+        "PRIMITIVES"
+      ]
+    },
+    "instance_6": {
+      "value": "undefined",
+      "path": [
+        "instance_6",
+        "Cf",
+        "C",
+        "PRIMITIVES"
       ]
     }
   }
