@@ -1,0 +1,444 @@
+@prefix BASE: <http://example.org/BASE#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+BASE:BASE {
+    BASE:BASE a rdfs:Class .
+
+    BASE: xsd:decimal BASE:AmountInKg ;
+        xsd:string BASE:Name .
+
+    BASE:Anodizing rdfs:member BASE:SurfaceTreatment .
+
+    BASE:OffTheShelfProduct rdfs:member BASE:MATERIAL .
+
+    BASE:Pickling rdfs:member BASE:SurfaceTreatment .
+
+    BASE:Product rdfs:member BASE:Chemical .
+
+    BASE:Substrate rdfs:member BASE:COATED-PRODUCT .
+
+    BASE:Washing rdfs:member BASE:SurfaceTreatment .
+
+    BASE:instance_0 xsd:decimal BASE:AmountInKg .
+
+    BASE:instance_1 xsd:decimal BASE:AmountInKg .
+
+    BASE:instance_10 xsd:decimal BASE:Name .
+
+    BASE:instance_100 xsd:anyURI BASE:Name .
+
+    BASE:instance_101 xsd:anyURI BASE:Name .
+
+    BASE:instance_102 xsd:anyURI BASE:Name .
+
+    BASE:instance_103 xsd:anyURI BASE:Name .
+
+    BASE:instance_104 xsd:anyURI BASE:Name .
+
+    BASE:instance_105 xsd:anyURI BASE:Name .
+
+    BASE:instance_106 xsd:anyURI BASE:Name .
+
+    BASE:instance_107 xsd:anyURI BASE:Name .
+
+    BASE:instance_108 xsd:anyURI BASE:Name .
+
+    BASE:instance_109 xsd:anyURI BASE:Name .
+
+    BASE:instance_11 xsd:decimal BASE:Name .
+
+    BASE:instance_110 xsd:anyURI BASE:Name .
+
+    BASE:instance_111 xsd:anyURI BASE:Name .
+
+    BASE:instance_112 xsd:anyURI BASE:Name .
+
+    BASE:instance_113 xsd:anyURI BASE:Name .
+
+    BASE:instance_114 xsd:anyURI BASE:Name .
+
+    BASE:instance_115 xsd:anyURI BASE:Name .
+
+    BASE:instance_116 xsd:anyURI BASE:Name .
+
+    BASE:instance_117 xsd:anyURI BASE:Name .
+
+    BASE:instance_118 xsd:anyURI BASE:Name .
+
+    BASE:instance_119 xsd:anyURI BASE:Name .
+
+    BASE:instance_12 xsd:decimal BASE:Name .
+
+    BASE:instance_120 xsd:anyURI BASE:Name .
+
+    BASE:instance_121 xsd:anyURI BASE:Name .
+
+    BASE:instance_122 xsd:anyURI BASE:Name .
+
+    BASE:instance_123 xsd:anyURI BASE:Name .
+
+    BASE:instance_124 xsd:anyURI BASE:Name .
+
+    BASE:instance_125 xsd:anyURI BASE:Name .
+
+    BASE:instance_126 xsd:anyURI BASE:Name .
+
+    BASE:instance_127 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_128 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_129 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_13 xsd:decimal BASE:Name .
+
+    BASE:instance_130 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_131 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_132 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_133 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_134 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_135 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_136 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_137 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_138 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_139 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_14 xsd:decimal BASE:Name .
+
+    BASE:instance_140 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_141 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_142 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_143 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_144 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_145 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_146 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_147 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_148 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_149 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_15 xsd:decimal BASE:AmountInKg .
+
+    BASE:instance_150 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_151 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_152 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_153 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_154 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_155 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_156 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_157 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_158 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_159 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_16 xsd:decimal BASE:AmountInKg .
+
+    BASE:instance_160 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_161 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_162 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_163 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_164 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_165 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_166 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_167 xsd:anyURI BASE:AmountInKg .
+
+    BASE:instance_17 xsd:decimal BASE:AmountInKg .
+
+    BASE:instance_18 xsd:decimal BASE:AmountInKg .
+
+    BASE:instance_19 xsd:decimal BASE:AmountInKg .
+
+    BASE:instance_2 xsd:decimal BASE:AmountInKg .
+
+    BASE:instance_20 xsd:decimal BASE:Url .
+
+    BASE:instance_21 xsd:decimal BASE:Url .
+
+    BASE:instance_22 xsd:decimal BASE:Url .
+
+    BASE:instance_23 xsd:decimal BASE:Url .
+
+    BASE:instance_24 xsd:decimal BASE:Url .
+
+    BASE:instance_25 xsd:decimal BASE:Name .
+
+    BASE:instance_26 xsd:decimal BASE:Name .
+
+    BASE:instance_27 xsd:decimal BASE:Name .
+
+    BASE:instance_28 xsd:decimal BASE:Name .
+
+    BASE:instance_29 xsd:decimal BASE:Name .
+
+    BASE:instance_3 xsd:decimal BASE:AmountInKg .
+
+    BASE:instance_30 xsd:decimal BASE:AmountInKg .
+
+    BASE:instance_31 xsd:decimal BASE:AmountInKg .
+
+    BASE:instance_32 xsd:decimal BASE:AmountInKg .
+
+    BASE:instance_33 xsd:decimal BASE:AmountInKg .
+
+    BASE:instance_34 xsd:decimal BASE:AmountInKg .
+
+    BASE:instance_35 xsd:decimal BASE:Url .
+
+    BASE:instance_36 xsd:decimal BASE:Url .
+
+    BASE:instance_37 xsd:decimal BASE:Url .
+
+    BASE:instance_38 xsd:decimal BASE:Url .
+
+    BASE:instance_39 xsd:decimal BASE:Url .
+
+    BASE:instance_4 xsd:decimal BASE:AmountInKg .
+
+    BASE:instance_40 xsd:decimal BASE:Name .
+
+    BASE:instance_41 xsd:decimal BASE:Name .
+
+    BASE:instance_42 xsd:decimal BASE:Name .
+
+    BASE:instance_43 xsd:decimal BASE:Name .
+
+    BASE:instance_44 xsd:decimal BASE:Name .
+
+    BASE:instance_45 xsd:anyURI BASE:Url .
+
+    BASE:instance_46 xsd:anyURI BASE:Url .
+
+    BASE:instance_47 xsd:anyURI BASE:Url .
+
+    BASE:instance_48 xsd:anyURI BASE:Name .
+
+    BASE:instance_49 xsd:anyURI BASE:Name .
+
+    BASE:instance_5 xsd:decimal BASE:Url .
+
+    BASE:instance_50 xsd:anyURI BASE:Name .
+
+    BASE:instance_51 xsd:string BASE:Name .
+
+    BASE:instance_52 xsd:string BASE:Name .
+
+    BASE:instance_53 xsd:string BASE:Name .
+
+    BASE:instance_54 xsd:anyURI BASE:Url .
+
+    BASE:instance_55 xsd:anyURI BASE:Url .
+
+    BASE:instance_56 xsd:anyURI BASE:Url .
+
+    BASE:instance_57 xsd:anyURI BASE:Url .
+
+    BASE:instance_58 xsd:anyURI BASE:Url .
+
+    BASE:instance_59 xsd:anyURI BASE:Url .
+
+    BASE:instance_6 xsd:decimal BASE:Url .
+
+    BASE:instance_60 xsd:anyURI BASE:Url .
+
+    BASE:instance_61 xsd:anyURI BASE:Url .
+
+    BASE:instance_62 xsd:anyURI BASE:Url .
+
+    BASE:instance_63 xsd:anyURI BASE:Url .
+
+    BASE:instance_64 xsd:anyURI BASE:Url .
+
+    BASE:instance_65 xsd:anyURI BASE:Url .
+
+    BASE:instance_66 xsd:anyURI BASE:Url .
+
+    BASE:instance_67 xsd:anyURI BASE:Url .
+
+    BASE:instance_68 xsd:anyURI BASE:Url .
+
+    BASE:instance_69 xsd:anyURI BASE:Url .
+
+    BASE:instance_7 xsd:decimal BASE:Url .
+
+    BASE:instance_70 xsd:anyURI BASE:Url .
+
+    BASE:instance_71 xsd:anyURI BASE:Url .
+
+    BASE:instance_72 xsd:anyURI BASE:Url .
+
+    BASE:instance_73 xsd:anyURI BASE:Url .
+
+    BASE:instance_74 xsd:anyURI BASE:Url .
+
+    BASE:instance_75 xsd:anyURI BASE:Url .
+
+    BASE:instance_76 xsd:anyURI BASE:Url .
+
+    BASE:instance_77 xsd:anyURI BASE:Url .
+
+    BASE:instance_78 xsd:anyURI BASE:Url .
+
+    BASE:instance_79 xsd:anyURI BASE:Url .
+
+    BASE:instance_8 xsd:decimal BASE:Url .
+
+    BASE:instance_80 xsd:anyURI BASE:Url .
+
+    BASE:instance_81 xsd:anyURI BASE:Url .
+
+    BASE:instance_82 xsd:anyURI BASE:Url .
+
+    BASE:instance_83 xsd:anyURI BASE:Url .
+
+    BASE:instance_84 xsd:anyURI BASE:Url .
+
+    BASE:instance_85 xsd:anyURI BASE:Url .
+
+    BASE:instance_86 xsd:anyURI BASE:Url .
+
+    BASE:instance_87 xsd:anyURI BASE:Url .
+
+    BASE:instance_88 xsd:anyURI BASE:Url .
+
+    BASE:instance_89 xsd:anyURI BASE:Url .
+
+    BASE:instance_9 xsd:decimal BASE:Url .
+
+    BASE:instance_90 xsd:anyURI BASE:Url .
+
+    BASE:instance_91 xsd:anyURI BASE:Url .
+
+    BASE:instance_92 xsd:anyURI BASE:Name .
+
+    BASE:instance_93 xsd:anyURI BASE:Name .
+
+    BASE:instance_94 xsd:anyURI BASE:Name .
+
+    BASE:instance_95 xsd:anyURI BASE:Name .
+
+    BASE:instance_96 xsd:anyURI BASE:Name .
+
+    BASE:instance_97 xsd:anyURI BASE:Name .
+
+    BASE:instance_98 xsd:anyURI BASE:Name .
+
+    BASE:instance_99 xsd:anyURI BASE:Name .
+
+    BASE:Binder rdfs:member BASE:CoatingLayer .
+
+    BASE:ColourPigment rdfs:member BASE:Pigment .
+
+    BASE:DryingAgent rdfs:member BASE:Additive .
+
+    BASE:Dye rdfs:member BASE:Additive .
+
+    BASE:Etching rdfs:member BASE:SurfaceTreatment .
+
+    BASE:Extender rdfs:member BASE:CoatingLayer .
+
+    BASE:Filler rdfs:member BASE:Pigment .
+
+    BASE:FoamingAgent rdfs:member BASE:Additive .
+
+    BASE:InhibitorPigment rdfs:member BASE:Pigment .
+
+    BASE:LightStabiliser rdfs:member BASE:Additive .
+
+    BASE:NonReactive rdfs:member BASE:Chemical .
+
+    BASE:PolymerisationProcess rdfs:member BASE:PRODUCTION-PROCESS .
+
+    BASE:PreTreatedSurface rdfs:member BASE:Layers .
+
+    BASE:Preservative rdfs:member BASE:Additive .
+
+    BASE:ProcessProduct rdfs:member BASE:MATERIAL .
+
+    BASE:REACTION rdfs:isDefinedBy BASE:PolymerisationProcess .
+
+    BASE:Reactant rdfs:member BASE:Chemical .
+
+    BASE:RheologyAgent rdfs:member BASE:Additive .
+
+    BASE:SolGelCoating rdfs:member BASE:SurfaceTreatment .
+
+    BASE:SurfaceActiveAgent rdfs:member BASE:Additive .
+
+    BASE:WettingAgent rdfs:member BASE:Additive .
+
+    BASE:COATED-PRODUCT rdfs:isDefinedBy BASE:BASE .
+
+    BASE:Layers rdfs:member BASE:COATED-PRODUCT .
+
+    BASE:MATERIAL rdfs:isDefinedBy BASE:Binder,
+            BASE:ColourPigment,
+            BASE:DryingAgent,
+            BASE:Dye,
+            BASE:Extender,
+            BASE:Filler,
+            BASE:FoamingAgent,
+            BASE:InhibitorPigment,
+            BASE:LightStabiliser,
+            BASE:PreTreatedSurface,
+            BASE:Preservative,
+            BASE:RheologyAgent,
+            BASE:SurfaceActiveAgent,
+            BASE:WettingAgent .
+
+    BASE:PRODUCTION-PROCESS rdfs:isDefinedBy BASE:ProcessProduct .
+
+    BASE:CHEMICAL-COMPONENT rdfs:isDefinedBy BASE:Etching,
+            BASE:NonReactive,
+            BASE:Reactant,
+            BASE:SolGelCoating .
+
+    BASE:Chemical rdfs:member BASE:REACTION .
+
+    BASE:Pigment rdfs:member BASE:CoatingLayer .
+
+    BASE:CoatingLayer rdfs:member BASE:Layers .
+
+    BASE:SurfaceTreatment rdfs:member BASE:PRODUCTION-PROCESS .
+
+    BASE:Additive rdfs:member BASE:CoatingLayer .
+
+    BASE:Url rdf:value BASE:CHEMICAL-COMPONENT .
+
+    BASE:AmountInKg rdf:value BASE:CHEMICAL-COMPONENT .
+
+    BASE:Name rdf:value BASE:CHEMICAL-COMPONENT .
+}
+

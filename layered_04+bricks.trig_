@@ -1,0 +1,93 @@
+@prefix CHEMICAL-COMPONENT: <http://example.org/CHEMICAL-COMPONENT#> .
+@prefix COATED-PRODUCT: <http://example.org/COATED-PRODUCT#> .
+@prefix MATERIAL: <http://example.org/MATERIAL#> .
+@prefix PRODUCTION-PROCESS: <http://example.org/PRODUCTION-PROCESS#> .
+@prefix REACTION: <http://example.org/REACTION#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+CHEMICAL-COMPONENT:CHEMICAL-COMPONENT a rdfs:Class .
+
+COATED-PRODUCT:COATED-PRODUCT a rdfs:Class .
+
+MATERIAL:MATERIAL a rdfs:Class .
+
+PRODUCTION-PROCESS:PRODUCTION-PROCESS a rdfs:Class .
+
+REACTION:REACTION a rdfs:Class .
+
+CHEMICAL-COMPONENT: xsd:anyURI CHEMICAL-COMPONENT:Url ;
+    xsd:decimal CHEMICAL-COMPONENT:AmountInKg ;
+    xsd:string CHEMICAL-COMPONENT:Name .
+
+COATED-PRODUCT:Binder rdfs:member COATED-PRODUCT:CoatingLayer .
+
+COATED-PRODUCT:ColourPigment rdfs:member COATED-PRODUCT:Pigment .
+
+COATED-PRODUCT:DryingAgent rdfs:member COATED-PRODUCT:Additive .
+
+COATED-PRODUCT:Dye rdfs:member COATED-PRODUCT:Additive .
+
+COATED-PRODUCT:Extender rdfs:member COATED-PRODUCT:CoatingLayer .
+
+COATED-PRODUCT:Filler rdfs:member COATED-PRODUCT:Pigment .
+
+COATED-PRODUCT:FoamingAgent rdfs:member COATED-PRODUCT:Additive .
+
+COATED-PRODUCT:InhibitorPigment rdfs:member COATED-PRODUCT:Pigment .
+
+COATED-PRODUCT:LightStabiliser rdfs:member COATED-PRODUCT:Additive .
+
+COATED-PRODUCT:PreTreatedSurface rdfs:member COATED-PRODUCT:Layers .
+
+COATED-PRODUCT:Preservative rdfs:member COATED-PRODUCT:Additive .
+
+COATED-PRODUCT:RheologyAgent rdfs:member COATED-PRODUCT:Additive .
+
+COATED-PRODUCT:Substrate rdfs:member COATED-PRODUCT:COATED-PRODUCT .
+
+COATED-PRODUCT:SurfaceActiveAgent rdfs:member COATED-PRODUCT:Additive .
+
+COATED-PRODUCT:WettingAgent rdfs:member COATED-PRODUCT:Additive .
+
+MATERIAL:OffTheShelfProduct rdfs:member MATERIAL:MATERIAL .
+
+MATERIAL:ProcessProduct rdfs:member MATERIAL:MATERIAL .
+
+PRODUCTION-PROCESS:Anodizing rdfs:member PRODUCTION-PROCESS:SurfaceTreatment .
+
+PRODUCTION-PROCESS:Etching rdfs:member PRODUCTION-PROCESS:SurfaceTreatment .
+
+PRODUCTION-PROCESS:Pickling rdfs:member PRODUCTION-PROCESS:SurfaceTreatment .
+
+PRODUCTION-PROCESS:PolymerisationProcess rdfs:member PRODUCTION-PROCESS:PRODUCTION-PROCESS .
+
+PRODUCTION-PROCESS:SolGelCoating rdfs:member PRODUCTION-PROCESS:SurfaceTreatment .
+
+PRODUCTION-PROCESS:Washing rdfs:member PRODUCTION-PROCESS:SurfaceTreatment .
+
+REACTION:NonReactive rdfs:member REACTION:Chemical .
+
+REACTION:Product rdfs:member REACTION:Chemical .
+
+REACTION:Reactant rdfs:member REACTION:Chemical .
+
+CHEMICAL-COMPONENT:AmountInKg rdf:value CHEMICAL-COMPONENT:CHEMICAL-COMPONENT .
+
+CHEMICAL-COMPONENT:Name rdf:value CHEMICAL-COMPONENT:CHEMICAL-COMPONENT .
+
+CHEMICAL-COMPONENT:Url rdf:value CHEMICAL-COMPONENT:CHEMICAL-COMPONENT .
+
+COATED-PRODUCT:Layers rdfs:member COATED-PRODUCT:COATED-PRODUCT .
+
+COATED-PRODUCT:Pigment rdfs:member COATED-PRODUCT:CoatingLayer .
+
+REACTION:Chemical rdfs:member REACTION:REACTION .
+
+COATED-PRODUCT:CoatingLayer rdfs:member COATED-PRODUCT:Layers .
+
+PRODUCTION-PROCESS:SurfaceTreatment rdfs:member PRODUCTION-PROCESS:PRODUCTION-PROCESS .
+
+COATED-PRODUCT:Additive rdfs:member COATED-PRODUCT:CoatingLayer .
+
