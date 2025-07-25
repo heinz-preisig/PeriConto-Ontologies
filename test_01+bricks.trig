@@ -7,22 +7,6 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-D:D {
-    D:D a rdfs:Class .
-
-    D:Daaa rdfs:member D:Daa .
-
-    D:Dbbb rdfs:member D:Dbb .
-
-    D:Da rdfs:member D:D .
-
-    D:Daa rdfs:member D:Da .
-
-    D:Db rdfs:member D:D .
-
-    D:Dbb rdfs:member D:Db .
-}
-
 C:C {
     C:C a rdfs:Class .
 
@@ -59,12 +43,20 @@ B:B {
     B:Log rdf:value B:B .
 }
 
-E:E {
-    E:E a rdfs:Class .
+D:D {
+    D:D a rdfs:Class .
 
-    E: rdfs:comment E:Com .
+    D:Daaa rdfs:member D:Daa .
 
-    E:Com rdf:value E:E .
+    D:Dbbb rdfs:member D:Dbb .
+
+    D:Da rdfs:member D:D .
+
+    D:Daa rdfs:member D:Da .
+
+    D:Db rdfs:member D:D .
+
+    D:Dbb rdfs:member D:Db .
 }
 
 A:A {
@@ -73,5 +65,13 @@ A:A {
     A:Aa rdfs:member A:A .
 
     A:Ab rdfs:member A:A .
+}
+
+E:E {
+    E:E a rdfs:Class .
+
+    E: rdfs:comment E:Com .
+
+    E:Com rdf:value E:E .
 }
 
