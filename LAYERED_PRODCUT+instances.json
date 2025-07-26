@@ -1,0 +1,158 @@
+{
+  "BASE": {
+    "instance_0": {
+      "value": "undefined",
+      "path": [
+        "instance_0",
+        "QuantityMeasure",
+        "CHEMICAL-COMPONENT",
+        "OffTheShelf",
+        "MATERIAL",
+        "Substrate",
+        "LAYERED-PRODUCT",
+        "BASE"
+      ]
+    },
+    "instance_1": {
+      "value": "undefined",
+      "path": [
+        "instance_1",
+        "Url",
+        "CHEMICAL-COMPONENT",
+        "OffTheShelf",
+        "MATERIAL",
+        "Substrate",
+        "LAYERED-PRODUCT",
+        "BASE"
+      ]
+    },
+    "instance_2": {
+      "value": "undefined",
+      "path": [
+        "instance_2",
+        "QuantityMeasure",
+        "CHEMICAL-COMPONENT",
+        "SolGelCoating",
+        "SurfaceTreatmentProcess",
+        "PRODUCTION-PROCESS",
+        "ProcessProduct",
+        "MATERIAL",
+        "Substrate",
+        "LAYERED-PRODUCT",
+        "BASE"
+      ]
+    },
+    "instance_3": {
+      "value": "undefined",
+      "path": [
+        "instance_3",
+        "Url",
+        "CHEMICAL-COMPONENT",
+        "SolGelCoating",
+        "SurfaceTreatmentProcess",
+        "PRODUCTION-PROCESS",
+        "ProcessProduct",
+        "MATERIAL",
+        "Substrate",
+        "LAYERED-PRODUCT",
+        "BASE"
+      ]
+    },
+    "instance_4": {
+      "value": "undefined",
+      "path": [
+        "instance_4",
+        "QuantityMeasure",
+        "CHEMICAL-COMPONENT",
+        "Etching",
+        "SurfaceTreatmentProcess",
+        "PRODUCTION-PROCESS",
+        "ProcessProduct",
+        "MATERIAL",
+        "Substrate",
+        "LAYERED-PRODUCT",
+        "BASE"
+      ]
+    },
+    "instance_5": {
+      "value": "undefined",
+      "path": [
+        "instance_5",
+        "Url",
+        "CHEMICAL-COMPONENT",
+        "Etching",
+        "SurfaceTreatmentProcess",
+        "PRODUCTION-PROCESS",
+        "ProcessProduct",
+        "MATERIAL",
+        "Substrate",
+        "LAYERED-PRODUCT",
+        "BASE"
+      ]
+    },
+    "instance_6": {
+      "value": "undefined",
+      "path": [
+        "instance_6",
+        "QuantityMeasure",
+        "CHEMICAL-COMPONENT",
+        "Pickling",
+        "SurfaceTreatmentProcess",
+        "PRODUCTION-PROCESS",
+        "ProcessProduct",
+        "MATERIAL",
+        "Substrate",
+        "LAYERED-PRODUCT",
+        "BASE"
+      ]
+    },
+    "instance_7": {
+      "value": "undefined",
+      "path": [
+        "instance_7",
+        "Url",
+        "CHEMICAL-COMPONENT",
+        "Pickling",
+        "SurfaceTreatmentProcess",
+        "PRODUCTION-PROCESS",
+        "ProcessProduct",
+        "MATERIAL",
+        "Substrate",
+        "LAYERED-PRODUCT",
+        "BASE"
+      ]
+    },
+    "instance_8": {
+      "value": "undefined",
+      "path": [
+        "instance_8",
+        "QuantityMeasure",
+        "CHEMICAL-COMPONENT",
+        "Washing",
+        "SurfaceTreatmentProcess",
+        "PRODUCTION-PROCESS",
+        "ProcessProduct",
+        "MATERIAL",
+        "Substrate",
+        "LAYERED-PRODUCT",
+        "BASE"
+      ]
+    },
+    "instance_9": {
+      "value": "undefined",
+      "path": [
+        "instance_9",
+        "Url",
+        "CHEMICAL-COMPONENT",
+        "Washing",
+        "SurfaceTreatmentProcess",
+        "PRODUCTION-PROCESS",
+        "ProcessProduct",
+        "MATERIAL",
+        "Substrate",
+        "LAYERED-PRODUCT",
+        "BASE"
+      ]
+    }
+  }
+}

@@ -1,0 +1,102 @@
+@prefix CHEMICAL-COMPONENT: <http://example.org/CHEMICAL-COMPONENT#> .
+@prefix LAYERED-PRODUCT: <http://example.org/LAYERED-PRODUCT#> .
+@prefix MATERIAL: <http://example.org/MATERIAL#> .
+@prefix PRODUCTION-PROCESS: <http://example.org/PRODUCTION-PROCESS#> .
+@prefix REACTION: <http://example.org/REACTION#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+LAYERED-PRODUCT:LAYERED-PRODUCT {
+    LAYERED-PRODUCT:LAYERED-PRODUCT a rdfs:Class .
+
+    LAYERED-PRODUCT:Binder rdfs:member LAYERED-PRODUCT:CoatingLayer .
+
+    LAYERED-PRODUCT:Catalyst rdfs:member LAYERED-PRODUCT:Additive .
+
+    LAYERED-PRODUCT:CollourPigment rdfs:member LAYERED-PRODUCT:Pigment .
+
+    LAYERED-PRODUCT:DefoamingAgent rdfs:member LAYERED-PRODUCT:Additive .
+
+    LAYERED-PRODUCT:DryingAgent rdfs:member LAYERED-PRODUCT:Additive .
+
+    LAYERED-PRODUCT:Dye rdfs:member LAYERED-PRODUCT:Additive .
+
+    LAYERED-PRODUCT:Extender rdfs:member LAYERED-PRODUCT:CoatingLayer .
+
+    LAYERED-PRODUCT:Filler rdfs:member LAYERED-PRODUCT:Pigment .
+
+    LAYERED-PRODUCT:InhibitorPigment rdfs:member LAYERED-PRODUCT:Pigment .
+
+    LAYERED-PRODUCT:LightStabiliser rdfs:member LAYERED-PRODUCT:Additive .
+
+    LAYERED-PRODUCT:PreTreatementOfSurface rdfs:member LAYERED-PRODUCT:Strata .
+
+    LAYERED-PRODUCT:Preservative rdfs:member LAYERED-PRODUCT:Additive .
+
+    LAYERED-PRODUCT:RheologyAgent rdfs:member LAYERED-PRODUCT:Additive .
+
+    LAYERED-PRODUCT:Substrate rdfs:member LAYERED-PRODUCT:LAYERED-PRODUCT .
+
+    LAYERED-PRODUCT:SurfaceActiveAgent rdfs:member LAYERED-PRODUCT:Additive .
+
+    LAYERED-PRODUCT:WettingAgent rdfs:member LAYERED-PRODUCT:Additive .
+
+    LAYERED-PRODUCT:Strata rdfs:member LAYERED-PRODUCT:LAYERED-PRODUCT .
+
+    LAYERED-PRODUCT:Pigment rdfs:member LAYERED-PRODUCT:CoatingLayer .
+
+    LAYERED-PRODUCT:CoatingLayer rdfs:member LAYERED-PRODUCT:Strata .
+
+    LAYERED-PRODUCT:Additive rdfs:member LAYERED-PRODUCT:CoatingLayer .
+}
+
+PRODUCTION-PROCESS:PRODUCTION-PROCESS {
+    PRODUCTION-PROCESS:PRODUCTION-PROCESS a rdfs:Class .
+
+    PRODUCTION-PROCESS:Anodising rdfs:member PRODUCTION-PROCESS:SurfaceTreatmentProcess .
+
+    PRODUCTION-PROCESS:ChemicalProcess rdfs:member PRODUCTION-PROCESS:PRODUCTION-PROCESS .
+
+    PRODUCTION-PROCESS:Etching rdfs:member PRODUCTION-PROCESS:SurfaceTreatmentProcess .
+
+    PRODUCTION-PROCESS:Pickling rdfs:member PRODUCTION-PROCESS:SurfaceTreatmentProcess .
+
+    PRODUCTION-PROCESS:PolymerisationProcess rdfs:member PRODUCTION-PROCESS:PRODUCTION-PROCESS .
+
+    PRODUCTION-PROCESS:SolGelCoating rdfs:member PRODUCTION-PROCESS:SurfaceTreatmentProcess .
+
+    PRODUCTION-PROCESS:Washing rdfs:member PRODUCTION-PROCESS:SurfaceTreatmentProcess .
+
+    PRODUCTION-PROCESS:SurfaceTreatmentProcess rdfs:member PRODUCTION-PROCESS:PRODUCTION-PROCESS .
+}
+
+MATERIAL:MATERIAL {
+    MATERIAL:MATERIAL a rdfs:Class .
+
+    MATERIAL:OffTheShelf rdfs:member MATERIAL:MATERIAL .
+
+    MATERIAL:ProcessProduct rdfs:member MATERIAL:MATERIAL .
+}
+
+CHEMICAL-COMPONENT:CHEMICAL-COMPONENT {
+    CHEMICAL-COMPONENT:CHEMICAL-COMPONENT a rdfs:Class .
+
+    CHEMICAL-COMPONENT: xsd:anyURI CHEMICAL-COMPONENT:Url ;
+        xsd:decimal CHEMICAL-COMPONENT:QuantityMeasure .
+
+    CHEMICAL-COMPONENT:QuantityMeasure rdf:value CHEMICAL-COMPONENT:CHEMICAL-COMPONENT .
+
+    CHEMICAL-COMPONENT:Url rdf:value CHEMICAL-COMPONENT:CHEMICAL-COMPONENT .
+}
+
+REACTION:REACTION {
+    REACTION:REACTION a rdfs:Class .
+
+    REACTION:Inerts rdfs:member REACTION:REACTION .
+
+    REACTION:Products rdfs:member REACTION:REACTION .
+
+    REACTION:Reactants rdfs:member REACTION:REACTION .
+}
+

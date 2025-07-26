@@ -1,0 +1,114 @@
+@prefix BASE: <http://example.org/BASE#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+BASE:BASE {
+    BASE:BASE a rdfs:Class .
+
+    BASE:Anodising rdfs:member BASE:SurfaceTreatmentProcess .
+
+    BASE:Binder rdfs:member BASE:CoatingLayer .
+
+    BASE:Catalyst rdfs:member BASE:Additive .
+
+    BASE:CollourPigment rdfs:member BASE:Pigment .
+
+    BASE:DefoamingAgent rdfs:member BASE:Additive .
+
+    BASE:DryingAgent rdfs:member BASE:Additive .
+
+    BASE:Dye rdfs:member BASE:Additive .
+
+    BASE:Extender rdfs:member BASE:CoatingLayer .
+
+    BASE:Filler rdfs:member BASE:Pigment .
+
+    BASE:Inerts rdfs:member BASE:REACTION .
+
+    BASE:InhibitorPigment rdfs:member BASE:Pigment .
+
+    BASE:LightStabiliser rdfs:member BASE:Additive .
+
+    BASE:PreTreatementOfSurface rdfs:member BASE:Strata .
+
+    BASE:Preservative rdfs:member BASE:Additive .
+
+    BASE:Products rdfs:member BASE:REACTION .
+
+    BASE:Reactants rdfs:member BASE:REACTION .
+
+    BASE:RheologyAgent rdfs:member BASE:Additive .
+
+    BASE:SurfaceActiveAgent rdfs:member BASE:Additive .
+
+    BASE:WettingAgent rdfs:member BASE:Additive .
+
+    BASE:instance_0 xsd:decimal BASE:QuantityMeasure .
+
+    BASE:instance_1 xsd:anyURI BASE:Url .
+
+    BASE:instance_2 xsd:decimal BASE:QuantityMeasure .
+
+    BASE:instance_3 xsd:anyURI BASE:Url .
+
+    BASE:instance_4 xsd:decimal BASE:QuantityMeasure .
+
+    BASE:instance_5 xsd:anyURI BASE:Url .
+
+    BASE:instance_6 xsd:decimal BASE:QuantityMeasure .
+
+    BASE:instance_7 xsd:anyURI BASE:Url .
+
+    BASE:instance_8 xsd:decimal BASE:QuantityMeasure .
+
+    BASE:instance_9 xsd:anyURI BASE:Url .
+
+    BASE:ChemicalProcess rdfs:member BASE:PRODUCTION-PROCESS .
+
+    BASE:Etching rdfs:member BASE:SurfaceTreatmentProcess .
+
+    BASE:OffTheShelf rdfs:member BASE:MATERIAL .
+
+    BASE:Pickling rdfs:member BASE:SurfaceTreatmentProcess .
+
+    BASE:PolymerisationProcess rdfs:member BASE:PRODUCTION-PROCESS .
+
+    BASE:ProcessProduct rdfs:member BASE:MATERIAL .
+
+    BASE:SolGelCoating rdfs:member BASE:SurfaceTreatmentProcess .
+
+    BASE:Substrate rdfs:member BASE:LAYERED-PRODUCT .
+
+    BASE:Washing rdfs:member BASE:SurfaceTreatmentProcess .
+
+    BASE:CHEMICAL-COMPONENT rdfs:isDefinedBy BASE:Etching,
+            BASE:OffTheShelf,
+            BASE:Pickling,
+            BASE:SolGelCoating,
+            BASE:Washing .
+
+    BASE:LAYERED-PRODUCT rdfs:isDefinedBy BASE:BASE .
+
+    BASE:MATERIAL rdfs:isDefinedBy BASE:Substrate .
+
+    BASE:Strata rdfs:member BASE:LAYERED-PRODUCT .
+
+    BASE:PRODUCTION-PROCESS rdfs:isDefinedBy BASE:ProcessProduct .
+
+    BASE:Pigment rdfs:member BASE:CoatingLayer .
+
+    BASE:REACTION rdfs:isDefinedBy BASE:ChemicalProcess,
+            BASE:PolymerisationProcess .
+
+    BASE:CoatingLayer rdfs:member BASE:Strata .
+
+    BASE:QuantityMeasure rdf:value BASE:CHEMICAL-COMPONENT .
+
+    BASE:SurfaceTreatmentProcess rdfs:member BASE:PRODUCTION-PROCESS .
+
+    BASE:Url rdf:value BASE:CHEMICAL-COMPONENT .
+
+    BASE:Additive rdfs:member BASE:CoatingLayer .
+}
+
